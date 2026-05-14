@@ -244,77 +244,98 @@
 
   "pricing_section": {
     "section_id": "pricing",
-    "h2": "Selira AI Pricing: What's Free, What Costs Money, No Tricks",
-    "intro": "You've been burned before. Some platform promises 'free AI chat' and then locks the door after five messages unless you hand over $19.99. I get the skepticism. So here's the actual breakdown — what you can do at $0 and what each paid tier adds. No spin.",
+    "h2": "Selira AI Pricing — Real Plans, Real Numbers",
+    "intro": "No hidden fees. No surprise charges. Here's exactly what you get and what you pay for each Selira AI plan.",
     "plans": [
       {
-        "name": "Free",
-        "price_monthly": "$0",
-        "price_annual": "$0",
+        "name": "Selira Basic",
+        "original_price": "$14.99",
+        "price_monthly": "$9.99",
         "period": "/mo",
-        "highlight": "Unlimited NSFW chat with zero message cap — images are limited but the conversation never stops",
-        "features": [
-          "Unlimited uncensored chat — no daily or monthly message cap",
-          "2 lifetime starter image credits to test the engine",
-          "1 free image credit per day (resets daily)",
-          "Basic memory that tracks core conversation context",
-          "Full access to 1,000+ companions — no ads, no popups"
-        ],
-        "cta": "Start Free Now",
-        "is_recommended": false
-      },
-      {
-        "name": "Light",
-        "price_monthly": "$5.99",
-        "price_annual": "$59.90/yr (est.)",
-        "period": "/mo",
+        "billing": "Billed monthly",
+        "credits": "200",
+        "credits_label": "S credits/mo",
+        "credits_equivalent": "≈ 200 images or 20 videos / month",
         "highlight": "The entry point for anyone who wants NSFW images — not just chat",
         "features": [
-          "Everything in the Free plan",
-          "Full NSFW image generation unlocked",
-          "5 images per hour",
-          "Long-term memory with deeper context retention",
-          "Both anime and photorealistic image styles"
+          "200 S Monthly Image & Video Credits",
+          "Unlimited NSFW Chat & Content",
+          "Unlimited NSFW Companions",
+          "Undress NSFW Companions",
+          "Basic Chat Memory",
+          "Unlock All NSFW Content",
+          "Unlimited Video Feed Scrolling"
         ],
-        "cta": "Unlock Images Now",
+        "cta": "Become a Member",
+        "payment_methods": "₿ Pay with Crypto",
+        "guarantees": [
+          "No hidden fees",
+          "Cancel anytime"
+        ],
+        "badge": "🌸 50% OFF",
         "is_recommended": false
       },
       {
-        "name": "Basic",
-        "price_monthly": "See Site",
-        "price_annual": "See Site",
+        "name": "Selira Premium",
+        "original_price": "$39.99",
+        "price_monthly": "$19.99",
         "period": "/mo",
-        "highlight": "Images plus video generation — the sweet spot for most users",
+        "billing": "Billed monthly",
+        "credits": "500",
+        "credits_label": "S credits/mo",
+        "credits_equivalent": "≈ 500 images or 50 videos / month",
+        "highlight": "The sweet spot for most users — more credits, better memory",
         "features": [
-          "Everything in the Light plan",
-          "10 images per hour (doubled cap)",
-          "5 videos per hour (motion still clips)",
-          "Enhanced memory retention across longer conversations"
+          "500 S Monthly Image & Video Credits",
+          "Unlimited NSFW Chat & Content",
+          "Unlimited NSFW Companions",
+          "Undress NSFW Companions",
+          "Long-Term Chat Memory",
+          "Unlock All NSFW Content",
+          "Unlimited Video Feed Scrolling"
         ],
-        "cta": "Get the Full Experience",
+        "cta": "Become a Member",
+        "payment_methods": "₿ Pay with Crypto",
+        "guarantees": [
+          "No hidden fees",
+          "Cancel anytime"
+        ],
+        "badge": "🌸 70% OFF",
         "is_recommended": true,
-        "recommended_label": "Sweet Spot Pick"
+        "recommended_label": "Best Value"
       },
       {
-        "name": "Premium",
-        "price_monthly": "See Site",
-        "price_annual": "See Site",
+        "name": "Selira Platinum",
+        "original_price": "$133.30",
+        "price_monthly": "$39.99",
         "period": "/mo",
-        "highlight": "Maximum generation speed, deepest memory, everything uncapped",
+        "billing": "Billed monthly",
+        "credits": "1000",
+        "credits_label": "S credits/mo",
+        "credits_equivalent": "≈ 1,000 images or 100 videos / month",
+        "highlight": "Maximum credits, deepest memory, everything unlocked",
         "features": [
-          "Everything in the Basic plan",
-          "10 videos per hour (doubled video cap)",
-          "4x memory recall depth — she remembers everything",
-          "Access to premium AI model variants",
-          "Priority queue for image and video generation"
+          "1000 S Monthly Image & Video Credits",
+          "Unlimited NSFW Chat & Content",
+          "Unlimited NSFW Companions",
+          "Undress NSFW Companions",
+          "Long-Term Chat Memory",
+          "Unlock All NSFW Content",
+          "Unlimited Video Feed Scrolling"
         ],
-        "cta": "Go Premium",
+        "cta": "Become a Member",
+        "payment_methods": "₿ Pay with Crypto",
+        "guarantees": [
+          "No hidden fees",
+          "Cancel anytime"
+        ],
+        "badge": null,
         "is_recommended": false
       }
     ],
-    "pricing_note": "Selira also offers one-off image credit packs if you don't want a subscription. Billing is handled through third-party processors — your payment details never touch Selira's servers directly.",
+    "pricing_note": "All plans include unlimited NSFW chat. Credits are shared between images and videos. Billing is handled through secure third-party processors — your payment details never touch Selira's servers directly.",
     "affiliate_cta": {
-      "text": "Start free, upgrade only if it clicks",
+      "text": "Start with Basic and upgrade anytime — no lock-in",
       "url": "https://selira.ai/?ref=selira-ai-com"
     }
   },
