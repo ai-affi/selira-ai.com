@@ -1,26 +1,17 @@
 /**
  * i18n.js — Content injection engine for selira-ai.com
  * Loads content.json and injects all text into data-field attributes.
- * Supports subfolders for translations (e.g., /fr/, /es/).
+/**
+ * i18n.js — Content injection engine for selira-ai.com
+ * Loads content.json from SAME DIRECTORY and injects all text into data-field attributes.
+ * NO language detection — each language has its own folder with its own HTML + JSON.
  */
 (function () {
   'use strict';
 
   // ── CONFIG ──
-  var DEFAULT_LANG = 'en';
-
-  // Detect language from URL path: /fr/ → fr, /es/ → es
-  function detectLang() {
-    var path = window.location.pathname;
-    var match = path.match(/^\/([a-z]{2})(?:\/|$)/);
-    return match ? match[1] : DEFAULT_LANG;
-  }
-
-  // Build content.json path based on language
-  function contentPath(lang) {
-    if (lang === DEFAULT_LANG) return 'content.json';
-    return lang + '/content.json';
-  }
+  // Load content.json from the SAME directory as the HTML file
+  var CONTENT_PATH = 'content.json';
 
   // Resolve nested key like "header.nav_links.0.label"
   function getValue(obj, key) {
@@ -36,11 +27,9 @@
   // Set text content, preserving child elements if needed
   function setText(el, text) {
     if (text == null) return;
-    // If element has only one text node or is empty, set textContent
     if (el.children.length === 0) {
       el.textContent = text;
     } else {
-      // Replace only text nodes, keep HTML children
       var hasText = false;
       for (var i = 0; i < el.childNodes.length; i++) {
         if (el.childNodes[i].nodeType === Node.TEXT_NODE) {
@@ -50,7 +39,6 @@
         }
       }
       if (!hasText) {
-        // Prepend text before first child
         el.insertBefore(document.createTextNode(text), el.firstChild);
       }
     }
@@ -124,10 +112,7 @@
   }
 
   // ── BOOT ──
-  var lang = detectLang();
-  var path = contentPath(lang);
-
-  fetch(path)
+  fetch(CONTENT_PATH)
     .then(function (res) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return res.json();
@@ -136,13 +121,6 @@
       inject(data);
     })
     .catch(function (err) {
-      console.error('[i18n] Failed to load ' + path + ':', err);
-      // Fallback: try default language
-      if (lang !== DEFAULT_LANG) {
-        fetch(contentPath(DEFAULT_LANG))
-          .then(function (res) { return res.json(); })
-          .then(function (data) { inject(data); })
-          .catch(function (e) { console.error('[i18n] Fallback failed:', e); });
-      }
+      console.error('[i18n] Failed to load content.json:', err);
     });
 })();
