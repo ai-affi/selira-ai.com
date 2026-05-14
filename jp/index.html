@@ -9,20 +9,6 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://selira-ai.com/jp/">
     <link rel="canonical" href="https://selira-ai.com/jp/">
-    <!-- Hreflang: all language versions -->
-    <link rel="alternate" hreflang="fr" href="https://selira-ai.com/fr/">
-    <link rel="alternate" hreflang="de" href="https://selira-ai.com/de/">
-    <link rel="alternate" hreflang="it" href="https://selira-ai.com/it/">
-    <link rel="alternate" hreflang="nl" href="https://selira-ai.com/nl/">
-    <link rel="alternate" hreflang="es" href="https://selira-ai.com/es/">
-    <link rel="alternate" hreflang="pl" href="https://selira-ai.com/pl/">
-    <link rel="alternate" hreflang="ru" href="https://selira-ai.com/ru/">
-    <link rel="alternate" hreflang="tr" href="https://selira-ai.com/tr/">
-    <link rel="alternate" hreflang="ja" href="https://selira-ai.com/jp/">
-    <link rel="alternate" hreflang="ko" href="https://selira-ai.com/ko/">
-    <link rel="alternate" hreflang="pt" href="https://selira-ai.com/pt/">
-    <link rel="alternate" hreflang="en" href="https://selira-ai.com/">
-    <link rel="alternate" hreflang="x-default" href="https://selira-ai.com/">
     <title></title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -1527,6 +1513,51 @@
             border-top: 1px solid var(--black-border);
         }
 
+        /* ===== LANGUAGE SELECTOR ===== */
+        .footer-lang {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--black-border);
+        }
+
+        .footer-lang-title {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-bottom: 12px;
+        }
+
+        .footer-lang-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .footer-lang-item {
+            display: inline-block;
+            padding: 6px 12px;
+            background: var(--black-card);
+            border: 1px solid var(--black-border);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: var(--gray);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .footer-lang-item:hover {
+            border-color: var(--purple);
+            color: var(--purple-light);
+        }
+
+        .footer-lang-item.active {
+            background: var(--purple-glow);
+            border-color: var(--purple);
+            color: var(--purple-light);
+            font-weight: 600;
+        }
+
         /* ===== SIDEBAR ===== */
         .sidebar-sticky {
             display: none;
@@ -2479,9 +2510,63 @@
                     <a href="../best-ai-girlfriend-apps.html" data-field="footer.related_reviews.3.label"></a>
                 </div>
             </div>
+
+            <!-- LANGUAGE SELECTOR -->
+            <div class="footer-lang">
+                <div class="footer-lang-title">🌐 Language</div>
+                <div class="footer-lang-list">
+                    <a href="/" class="footer-lang-item" data-lang="jp">🇺🇸 English</a>
+                    <a href="/fr/" class="footer-lang-item" data-lang="fr">🇫🇷 Français</a>
+                    <a href="/de/" class="footer-lang-item" data-lang="de">🇩🇪 Deutsch</a>
+                    <a href="/es/" class="footer-lang-item" data-lang="es">🇪🇸 Español</a>
+                    <a href="/it/" class="footer-lang-item" data-lang="it">🇮🇹 Italiano</a>
+                    <a href="/pt/" class="footer-lang-item" data-lang="pt">🇵🇹 Português</a>
+                    <a href="/nl/" class="footer-lang-item" data-lang="nl">🇳🇱 Nederlands</a>
+                    <a href="/pl/" class="footer-lang-item" data-lang="pl">🇵🇱 Polski</a>
+                    <a href="/ru/" class="footer-lang-item" data-lang="ru">🇷🇺 Русский</a>
+                    <a href="/tr/" class="footer-lang-item" data-lang="tr">🇹🇷 Türkçe</a>
+                    <a href="/jp/" class="footer-lang-item" data-lang="ja">🇯🇵 日本語</a>
+                    <a href="/ko/" class="footer-lang-item" data-lang="ko">🇰🇷 한국어</a>
+                </div>
+            </div>
+
             <p class="footer-copyright" data-field="footer.copyright"></p>
         </div>
     </footer>
 
+</body>
+</html>
+
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            var lang = "en";
+            var match = path.match(/^\/(fr|de|it|nl|es|pl|ru|tr|jp|ko|pt)\//);
+            if (match) lang = match[1] === "jp" ? "ja" : match[1];
+            var items = document.querySelectorAll(".footer-lang-item");
+            items.forEach(function(item) {
+                if (item.getAttribute("data-lang") === lang) {
+                    item.classList.add("active");
+                    item.textContent += " ✓";
+                }
+            });
+        })();
+    </script>
+</
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            var lang = "en";
+            var match = path.match(/^\/(fr|de|it|nl|es|pl|ru|tr|jp|ko|pt)\//);
+            if (match) lang = match[1] === "jp" ? "ja" : match[1];
+            var items = document.querySelectorAll(".footer-lang-item");
+            items.forEach(function(item) {
+                if (item.getAttribute("data-lang") === lang) {
+                    item.classList.add("active");
+                    item.textContent += " ✓";
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
