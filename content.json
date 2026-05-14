@@ -22,7 +22,7 @@
     ],
     "cta_button": {
       "text": "Try Selira Free",
-      "url": "https://selira.ai/?ref=selira-ai-com",
+      "url": "/go",
       "style": "primary"
     }
   },
@@ -40,7 +40,7 @@
     },
     "cta_primary": {
       "text": "Try Selira AI Free",
-      "url": "https://selira.ai/?ref=selira-ai-com"
+      "url": "/go"
     },
     "cta_secondary": {
       "text": "Read the Full Review",
@@ -95,7 +95,7 @@
     "verdict_for": "Selira AI is built for people who want to explore AI companionship without handing over a credit card just to say hello. If you're an anime fan chasing a specific archetype, a privacy-first user who won't tolerate data harvesting, or someone who's been burned by 'free' platforms that lock the door after ten messages — this one was made with you in mind.",
     "cta": {
       "text": "Start Chatting for Free",
-      "url": "https://selira.ai/?ref=selira-ai-com"
+      "url": "/go"
     }
   },
 
@@ -336,7 +336,7 @@
     "pricing_note": "All plans include unlimited NSFW chat. Credits are shared between images and videos. Billing is handled through secure third-party processors — your payment details never touch Selira's servers directly.",
     "affiliate_cta": {
       "text": "Start with Basic and upgrade anytime — no lock-in",
-      "url": "https://selira.ai/?ref=selira-ai-com"
+      "url": "/go"
     }
   },
 
@@ -523,7 +523,7 @@
     ],
     "final_cta": {
       "text": "Try Selira AI Free Now",
-      "url": "https://selira.ai/?ref=selira-ai-com",
+      "url": "/go",
       "subtext": "No credit card needed. Unlimited chat from the first message. Takes 90 seconds to start."
     }
   },
@@ -539,7 +539,7 @@
     "score_label": "Our Tested Score",
     "cta": {
       "text": "Try It Free Now",
-      "url": "https://selira.ai/?ref=selira-ai-com"
+      "url": "/go"
     },
     "price_summary": "Free unlimited chat — upgrades from $5.99/mo",
     "quick_links": [
