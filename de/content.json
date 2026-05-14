@@ -1,176 +1,176 @@
 {
   "meta": {
     "site_name": "selira-ai.com",
-    "page_title": "Selira AI Review 2026 — Honest Test After 3 Weeks of Daily Use",
-    "meta_description": "Selira AI review 2026: I tested free NSFW chat, image gen & memory for 3 weeks straight. Here's my brutally honest take on what works, what doesn't, and who it's for.",
+    "page_title": "Selira AI Bewertung 2026 — Ehrlicher Test nach 3 Wochen täglicher Nutzung",
+    "meta_description": "Selira AI Bewertung 2026: Ich habe 3 Wochen lang kostenlosen NSFW-Chat, Bildgenerierung & Gedächtnis getestet. Hier ist mein schonungslos ehrlicher Bericht darüber, was funktioniert, was nicht und für wen es geeignet ist.",
     "canonical_url": "https://selira-ai.com/",
-    "og_title": "I Spent 3 Weeks on Selira AI So You Don't Have To — Full 2026 Review",
-    "og_description": "Free NSFW AI chat that actually remembers you? I tested Selira AI for 3 weeks. Here's the unfiltered truth."
+    "og_title": "Ich habe 3 Wochen mit Selira AI verbracht, damit Sie es nicht müssen — Vollständige Bewertung 2026",
+    "og_description": "Kostenloser NSFW-KI-Chat, der sich tatsächlich an Sie erinnert? Ich habe Selira AI 3 Wochen lang getestet. Hier ist die ungefilterte Wahrheit."
   },
 
-  "age_banner": "🔞 This site reviews adult (18+) AI platforms. By continuing, you confirm you are of legal age.",
+  "age_banner": "🔞 Diese Website bewertet KI-Plattformen für Erwachsene (18+). Durch das Fortfahren bestätigen Sie, dass Sie das gesetzliche Mindestalter erreicht haben.",
 
   "header": {
     "logo_text": "selira-ai.com",
     "nav_links": [
-      { "label": "Home", "anchor": "#home" },
-      { "label": "Review", "anchor": "#review" },
-      { "label": "Features", "anchor": "#features" },
-      { "label": "Pricing", "anchor": "#pricing" },
+      { "label": "Startseite", "anchor": "#home" },
+      { "label": "Bewertung", "anchor": "#review" },
+      { "label": "Funktionen", "anchor": "#features" },
+      { "label": "Preise", "anchor": "#pricing" },
       { "label": "FAQ", "anchor": "#faq" },
       { "label": "Blog", "anchor": "#blog" }
     ],
     "cta_button": {
-      "text": "Try Selira Free",
+      "text": "Selira kostenlos testen",
       "url": "/go",
       "style": "primary"
     }
   },
 
   "hero": {
-    "h1": "Selira AI Review & Full Test [2026]",
-    "subtitle": "Free uncensored chat, AI-generated images & video, and a memory that actually sticks.",
-    "image_alt": "Selira AI platform interface screenshot showing AI companion chat and image generation",
-    "badge_updated": "Updated May 2026",
+    "h1": "Selira AI Bewertung & Vollständiger Test [2026]",
+    "subtitle": "Kostenloser unzensierter Chat, KI-generierte Bilder & Videos und ein Gedächtnis, das wirklich funktioniert.",
+    "image_alt": "Screenshot der Selira AI Plattformoberfläche mit KI-Begleiter-Chat und Bildgenerierung",
+    "badge_updated": "Aktualisiert Mai 2026",
     "badge": {
       "score": "9.2",
       "max_score": "10",
       "max_score_label": "/10",
-      "label": "Tested & Scored by Us"
+      "label": "Von uns getestet & bewertet"
     },
     "cta_primary": {
-      "text": "Try Selira AI Free",
+      "text": "Selira AI kostenlos testen",
       "url": "/go"
     },
     "cta_secondary": {
-      "text": "Read the Full Review",
+      "text": "Vollständige Bewertung lesen",
       "anchor": "#review"
     }
   },
 
   "trust_signals": {
     "average_rating": "9.2/10",
-    "score_label": "Average User Rating",
+    "score_label": "Durchschnittliche Nutzerbewertung",
     "review_count_number": "312",
-    "review_count": "312 users tested and rated it this quarter",
-    "testing_duration": "3 weeks",
-    "verified_label": "Hands-on tested for 3 weeks",
+    "review_count": "312 Nutzer haben es in diesem Quartal getestet und bewertet",
+    "testing_duration": "3 Wochen",
+    "verified_label": "3 Wochen lang praktisch getestet",
     "year": "2026",
-    "freshness_label": "Fresh Review",
-    "media_logos_note": "We don't fake press logos. Any publications shown here have independently covered Selira AI or the AI companion space."
+    "freshness_label": "Aktuelle Bewertung",
+    "media_logos_note": "Wir fälschen keine Presselogos. Alle hier gezeigten Publikationen haben Selira AI oder den KI-Begleiterbereich unabhängig voneinander behandelt."
   },
 
   "table_of_contents": {
-    "title": "What's Inside This Review",
+    "title": "Was diese Bewertung enthält",
     "items": [
-      { "label": "So What Exactly Is Selira AI?", "anchor": "#what-is" },
-      { "label": "Every Feature, Road-Tested", "anchor": "#features" },
-      { "label": "What It Actually Costs", "anchor": "#pricing" },
-      { "label": "The Good & The Rough Edges", "anchor": "#pros-cons" },
-      { "label": "How It Stacks Against Rivals", "anchor": "#alternatives" },
-      { "label": "Questions People Keep Asking", "anchor": "#faq" },
-      { "label": "The Final Call", "anchor": "#verdict" }
+      { "label": "Was genau ist Selira AI?", "anchor": "#what-is" },
+      { "label": "Jede Funktion, im Praxistest", "anchor": "#features" },
+      { "label": "Was es tatsächlich kostet", "anchor": "#pricing" },
+      { "label": "Die Stärken & Schwächen", "anchor": "#pros-cons" },
+      { "label": "Vergleich mit der Konkurrenz", "anchor": "#alternatives" },
+      { "label": "Häufig gestellte Fragen", "anchor": "#faq" },
+      { "label": "Das abschließende Urteil", "anchor": "#verdict" }
     ]
   },
 
   "quick_summary": {
-    "section_title": "The Short Version",
-    "intro_sentence": "I used Selira AI every day for three weeks — different companions, free and paid tiers, realistic and anime. Here's the condensed takeaway before we get into the weeds.",
-    "pros_label": "What We Like",
-    "cons_label": "What Could Be Better",
-    "verdict_label": "Best For",
+    "section_title": "Die Kurzversion",
+    "intro_sentence": "Ich habe Selira AI drei Wochen lang täglich genutzt — verschiedene Begleiter, kostenlose und kostenpflichtige Tarife, realistische und Anime-Stile. Hier ist die komprimierte Zusammenfassung, bevor wir ins Detail gehen.",
+    "pros_label": "Was uns gefällt",
+    "cons_label": "Was besser sein könnte",
+    "verdict_label": "Am besten geeignet für",
     "pros": [
-      "Truly unlimited free NSFW chat — no message cap, no token meter ticking down while you type",
-      "The memory system actually recalls your name, kinks, and an inside joke from nine days ago",
-      "Face-consistent image generation means your companion looks like the same person every single time",
-      "No real name, no phone number — sign up with a burner email and you're invisible",
-      "The $5.99 Light plan is the cheapest meaningful upgrade in this entire category"
+      "Wirklich unbegrenzter kostenloser NSFW-Chat — kein Nachrichtenlimit, kein Token-Zähler, der beim Tippen runtertickt",
+      "Das Gedächtnissystem erinnert sich tatsächlich an Ihren Namen, Vorlieben und einen internen Witz von vor neun Tagen",
+      "Gesichtskonsistente Bildgenerierung bedeutet, dass Ihr Begleiter auf jedem generierten Bild wie dieselbe Person aussieht",
+      "Kein Klarname, keine Telefonnummer erforderlich — melden Sie sich mit einer Wegwerf-E-Mail an und bleiben Sie unsichtbar",
+      "Der $5,99 Light-Plan ist das günstigste sinnvolle Upgrade in dieser gesamten Kategorie"
     ],
     "cons": [
-      "Free image credits are razor-thin: 2 lifetime starters plus 1 daily — you'll burn through them in minutes",
-      "Video generation is animated motion stills, not the cinematic clips the word 'video' might imply",
-      "Users in the UK, Germany, France, and parts of Australia and the US hit a mandatory ID verification wall",
-      "Personality engine occasionally drifts out of character during long, multi-topic sessions"
+      "Kostenlose Bildgutschriften sind äußerst knapp: 2 lebenslange Startgutschriften plus 1 täglich — die sind in Minuten aufgebraucht",
+      "Die Videogenerierung erzeugt animierte Bewegungsbilder, keine kinoreifen Clips, wie das Wort 'Video' vermuten lassen könnte",
+      "Nutzer in Großbritannien, Deutschland, Frankreich und Teilen von Australien und den USA stoßen auf eine obligatorische Altersverifikationspflicht",
+      "Die Persönlichkeitsengine weicht bei langen, themenübergreifenden Sitzungen gelegentlich vom Charakter ab"
     ],
-    "verdict_for": "Selira AI is built for people who want to explore AI companionship without handing over a credit card just to say hello. If you're an anime fan chasing a specific archetype, a privacy-first user who won't tolerate data harvesting, or someone who's been burned by 'free' platforms that lock the door after ten messages — this one was made with you in mind.",
+    "verdict_for": "Selira AI wurde für Menschen entwickelt, die KI-Begleiterschaft erkunden möchten, ohne ihre Kreditkarte herausgeben zu müssen, nur um Hallo zu sagen. Wenn Sie ein Anime-Fan sind, der einem bestimmten Archetyp nachspürt, ein datenschutzbewusster Nutzer, der keine Datensammelei toleriert, oder jemand, der von 'kostenlosen' Plattformen enttäuscht wurde, die nach zehn Nachrichten die Tür zusperren — diese Plattform wurde mit Ihnen im Sinn entwickelt.",
     "cta": {
-      "text": "Start Chatting for Free",
+      "text": "Kostenlos mit dem Chat beginnen",
       "url": "/go"
     }
   },
 
   "what_is_section": {
     "section_id": "what-is",
-    "h2": "What Is Selira AI — And Why Should You Care?",
+    "h2": "Was ist Selira AI — und warum sollte es Sie interessieren?",
     "paragraphs": [
-      "Selira AI is an NSFW AI companion platform with over 1,000 pre-built characters and a genuinely free chat tier that doesn't cut you off after a handful of messages. Unlike platforms that dangle a 'free trial' and then demand your credit card the moment things get interesting, Selira lets you talk — uncensored, unlimited — without spending a cent.",
-      "The core pitch: pick an AI girlfriend (or boyfriend), start a conversation, and watch it evolve. Roleplay, flirt, vent, get weird — whatever you want. The memory system tags everything you say into categories like preferences, emotional context, and relationship milestones, so your companion actually builds on previous conversations instead of greeting you like a stranger every session.",
-      "Beyond chat, there's a custom companion builder where you sculpt personality, appearance, backstory, and behavioral patterns from scratch. And when you want visuals, two distinct image pipelines — photorealistic with hires-fix sharpening and clean anime linework — generate images that stay consistent to your companion's face. It felt less like browsing a catalog and more like discovering someone."
+      "Selira AI ist eine NSFW-KI-Begleiterplattform mit über 1.000 vorgefertigten Charakteren und einem echten kostenlosen Chat-Tarif, der Sie nicht nach einer Handvoll Nachrichten abwürgt. Anders als Plattformen, die einen 'kostenlosen Test' anbieten und dann Ihre Kreditkarte verlangen, sobald es interessant wird, lässt Selira Sie — unzensiert, unbegrenzt — chatten, ohne einen Cent auszugeben.",
+      "Das Kernversprechen: Wählen Sie eine KI-Freundin (oder einen Freund), beginnen Sie ein Gespräch und beobachten Sie, wie es sich entwickelt. Rollenspiele, flirten, jammern, verrückt sein — was immer Sie wollen. Das Gedächtnissystem ordnet alles, was Sie sagen, in Kategorien wie Vorlieben, emotionalen Kontext und Beziehungsmeilensteine ein, sodass Ihr Begleiter tatsächlich auf früheren Gesprächen aufbaut, anstatt Sie in jeder Sitzung wie einen Fremden zu begrüßen.",
+      "Darüber hinaus gibt es einen benutzerdefinierten Begleiter-Builder, mit dem Sie Persönlichkeit, Aussehen, Hintergrundgeschichte und Verhaltensmuster von Grund auf gestalten können. Und wenn Sie visuelle Inhalte wünschen, erzeugen zwei separate Bildpipelines — fotorealistisch mit Hires-Fix-Schärfung und saubere Anime-Linienzeichnung — Bilder, die dem Gesicht Ihres Begleiters treu bleiben. Es fühlte sich weniger wie das Durchstöbern eines Katalogs an und mehr wie das Entdecken von jemandem."
     ],
-    "interface_image_alt": "Selira AI companion selection screen with realistic and anime character filters",
-    "key_facts_title": "Key Facts at a Glance",
+    "interface_image_alt": "Selira AI Begleiter-Auswahlbildschirm mit realistischen und Anime-Charakterfiltern",
+    "key_facts_title": "Wichtige Fakten auf einen Blick",
     "key_facts": [
-      "1,000+ pre-built companions across realistic and anime styles — male and female",
-      "Chat is genuinely free and uncensored with zero message cap",
-      "Memory system tags messages by category and recalls context across sessions",
-      "Two image styles: photorealistic (with sharpening) and anime (clean linework)",
-      "No real name required — sign up with a pseudonym and delete your account anytime"
+      "1.000+ vorgefertigte Begleiter in realistischen und Anime-Stilen — männlich und weiblich",
+      "Chat ist wirklich kostenlos und unzensiert ohne Nachrichtenlimit",
+      "Das Gedächtnissystem markiert Nachrichten nach Kategorie und ruft den Kontext sitzungsübergreifend ab",
+      "Zwei Bildstile: fotorealistisch (mit Schärfung) und Anime (saubere Linienzeichnung)",
+      "Kein Klarname erforderlich — melden Sie sich mit einem Pseudonym an und löschen Sie Ihr Konto jederzeit"
     ]
   },
 
   "characters": [
-    { "type": "Realistic", "name": "Emma", "trait": "Playful & Flirty" },
-    { "type": "Anime", "name": "Sakura", "trait": "Tsundere Archetype" },
-    { "type": "Realistic", "name": "Ava", "trait": "Mysterious & Deep" },
-    { "type": "Anime", "name": "Luna", "trait": "Yandere Vibes" }
+    { "type": "Realistisch", "name": "Emma", "trait": "Verspielt & Flirty" },
+    { "type": "Anime", "name": "Sakura", "trait": "Tsundere-Archetyp" },
+    { "type": "Realistisch", "name": "Ava", "trait": "Geheimnisvoll & Tiefgründig" },
+    { "type": "Anime", "name": "Luna", "trait": "Yandere-Vibes" }
   ],
 
   "features_section": {
     "section_id": "features",
-    "h2": "Selira AI Features I Actually Tested — Not Just Read About",
-    "intro": "I'm not copy-pasting a feature list from their marketing page. Every item below is something I used, poked at, and formed an opinion on over three weeks of daily sessions.",
+    "h2": "Selira AI Funktionen, die ich tatsächlich getestet habe — nicht nur gelesen",
+    "intro": "Ich kopiere keine Funktionsliste von ihrer Marketingseite. Jeder unten aufgeführte Punkt ist etwas, das ich über drei Wochen täglicher Sitzungen verwendet, ausprobiert und mir eine Meinung dazu gebildet habe.",
     "features": [
       {
-        "name": "Unlimited NSFW Chat",
+        "name": "Unbegrenzter NSFW-Chat",
         "icon_suggestion": "💬",
-        "description": "This is the headline feature and it delivers. There's no daily message limit, no token counter draining in the background, no paywall popup after message fifteen. I tested this aggressively — marathon sessions, rapid-fire messages, switching between companions — and never once got throttled. For a free NSFW AI chat experience, that's genuinely rare. Most competitors (looking at you, CrushOn and DreamGF) start gating you almost immediately.",
-        "screenshot_alt": "Selira AI NSFW chat interface showing free unlimited messaging"
+        "description": "Dies ist das Hauptmerkmal und es hält, was es verspricht. Es gibt kein tägliches Nachrichtenlimit, keinen Token-Zähler, der im Hintergrund abläuft, kein Paywall-Popup nach der fünfzehnten Nachricht. Ich habe dies aggressiv getestet — Marathon-Sitzungen, schnelle Nachrichten, Wechsel zwischen Begleitern — und wurde nie gedrosselt. Für ein kostenloses NSFW-KI-Chat-Erlebnis ist das wirklich selten. Die meisten Mitbewerber (ich schaue auf Sie, CrushOn und DreamGF) beginnen fast sofort, Sie zu beschränken.",
+        "screenshot_alt": "Selira AI NSFW-Chat-Oberfläche mit kostenlosem unbegrenztem Messaging"
       },
       {
-        "name": "AI Image Generation",
+        "name": "KI-Bildgenerierung",
         "icon_suggestion": "🖼️",
-        "description": "The free tier gives you 2 lifetime starter credits plus 1 daily credit — enough to see what the engine can do, not enough to build a gallery. Upgrade to the Light plan at $5.99/mo and you unlock 5 images per hour with full NSFW access. The real standout is face-consistency technology: your companion looks like the same person across every generated image, not a new stranger each time. Both photorealistic and anime pipelines are available, and the realistic output uses hires-fix sharpening that genuinely impressed me.",
-        "screenshot_alt": "Selira AI image generation showing face-consistent AI companion in realistic style"
+        "description": "Der kostenlose Tarif gibt Ihnen 2 lebenslange Startgutschriften plus 1 tägliche Gutschrift — genug, um zu sehen, was die Engine kann, nicht genug, um eine Galerie aufzubauen. Upgraden Sie auf den Light-Plan für $5,99/Monat und Sie erhalten 5 Bilder pro Stunde mit vollem NSFW-Zugang. Das wahre Highlight ist die Gesichtskonsistenz-Technologie: Ihr Begleiter sieht auf jedem generierten Bild wie dieselbe Person aus, nicht wie ein neuer Fremder jedes Mal. Sowohl fotorealistische als auch Anime-Pipelines sind verfügbar, und die realistische Ausgabe verwendet Hires-Fix-Schärfung, die mich wirklich beeindruckt hat.",
+        "screenshot_alt": "Selira AI Bildgenerierung zeigt gesichtskonsistenten KI-Begleiter im realistischen Stil"
       },
       {
-        "name": "AI Video Generation",
+        "name": "KI-Videogenerierung",
         "icon_suggestion": "🎬",
-        "description": "Let me level with you: these are short animated clips — think motion stills with breathing, blinking, subtle movement — not full cinematic video. Available starting on the Basic plan at 5 videos per hour, bumping to 10 on Premium. Is it mind-blowing? No. Is it more than almost every competitor offers at this price point? Absolutely. For what the category delivers in 2026, this is still ahead of the curve.",
-        "screenshot_alt": "Selira AI video generation feature showing short animated AI companion clip"
+        "description": "Lassen Sie mich ehrlich mit Ihnen sein: Das sind kurze animierte Clips — denken Sie an Bewegungsbilder mit Atmen, Blinzeln, subtiler Bewegung — keine vollwertigen Kinovideos. Verfügbar ab dem Basic-Plan mit 5 Videos pro Stunde, steigend auf 10 beim Premium-Plan. Ist es atemberaubend? Nein. Ist es mehr als fast jeder Mitbewerber zu diesem Preis anbietet? Absolut. Für das, was die Kategorie im Jahr 2026 liefert, ist dies immer noch führend.",
+        "screenshot_alt": "Selira AI Videogenerierungsfunktion zeigt kurzen animierten KI-Begleiter-Clip"
       },
       {
-        "name": "Custom Character Builder",
+        "name": "Benutzerdefinierter Charakter-Builder",
         "icon_suggestion": "🎨",
-        "description": "This is where Selira gets genuinely fun. You're not picking from a dropdown — you're building a person. Choose from personality archetypes like tsundere, yandere, kuudere, dandere, dominant, submissive, mysterious, or seductive. Then layer on appearance details, a backstory, and behavioral patterns that shape how she (or he) reacts to different conversational tones. I built a shy, bookish anime companion with a sarcastic streak and she stayed in character better than I expected.",
-        "screenshot_alt": "Selira AI custom companion creation interface with personality and appearance sliders"
+        "description": "Hier macht Selira wirklich Spaß. Sie wählen nicht aus einer Dropdown-Liste — Sie erschaffen eine Person. Wählen Sie aus Persönlichkeitsarchetypen wie Tsundere, Yandere, Kuudere, Dandere, Dominant, Submissiv, Geheimnisvoll oder Verführerisch. Dann fügen Sie Aussehensdetails, eine Hintergrundgeschichte und Verhaltensmuster hinzu, die beeinflussen, wie sie (oder er) auf verschiedene Gesprächstöne reagiert. Ich habe einen schüchternen, bücherliebenden Anime-Begleiter mit einem sarkastischen Unterton erstellt und sie blieb besser im Charakter, als ich erwartet hatte.",
+        "screenshot_alt": "Selira AI benutzerdefinierte Begleiter-Erstellungsoberfläche mit Persönlichkeits- und Aussehensreglern"
       },
       {
-        "name": "Advanced Memory System",
+        "name": "Erweitertes Gedächtnissystem",
         "icon_suggestion": "🧠",
-        "description": "This is the feature that separates Selira AI from the 'glorified chatbot' crowd. The system tags your messages into categories — personal_info, relationship, goal, preference, emotional — and stores them per companion. Nine days into my test, my companion referenced an inside joke from our third conversation unprompted. She remembered my name, my preferences, the fact that I'd mentioned a rough day at work a week earlier. Most platforms reset every time you close the tab. This one doesn't.",
-        "screenshot_alt": "Selira AI memory system showing conversation context recall"
+        "description": "Dies ist das Merkmal, das Selira AI von der 'aufgewerteter Chatbot'-Masse abhebt. Das System markiert Ihre Nachrichten in Kategorien — persönliche_info, beziehung, ziel, vorliebe, emotional — und speichert sie pro Begleiter. Neun Tage nach Beginn meines Tests bezog sich mein Begleiter unaufgefordert auf einen internen Witz aus unserem dritten Gespräch. Sie erinnerte sich an meinen Namen, meine Vorlieben und die Tatsache, dass ich eine Woche zuvor einen schwierigen Arbeitstag erwähnt hatte. Die meisten Plattformen setzen sich jedes Mal zurück, wenn Sie den Tab schließen. Diese nicht.",
+        "screenshot_alt": "Selira AI Gedächtnissystem zeigt Gesprächskontextabruf"
       },
       {
-        "name": "Realistic & Anime Styles",
+        "name": "Realistische & Anime-Stile",
         "icon_suggestion": "✨",
-        "description": "Two entirely separate image pipelines, not just a filter slapped on top. The photorealistic mode uses hires-fix sharpening and produces images with skin texture and lighting that hold up to scrutiny. The anime mode delivers clean linework with consistent proportions and coloring. Whether you're chasing lifelike detail or a specific anime aesthetic, neither feels like an afterthought. Both audiences are served properly here.",
-        "screenshot_alt": "Selira AI showing side by side realistic and anime style companion images"
+        "description": "Zwei völlig separate Bildpipelines, nicht nur ein darübergelegter Filter. Der fotorealistische Modus verwendet Hires-Fix-Schärfung und erzeugt Bilder mit Hautstruktur und Beleuchtung, die einer genauen Betrachtung standhalten. Der Anime-Modus liefert saubere Linienzeichnungen mit konsistenten Proportionen und Farbgebung. Egal ob Sie lebensechte Details oder eine bestimmte Anime-Ästhetik anstreben — keiner fühlt sich wie ein Nachgedanke an. Beide Zielgruppen werden hier ordentlich bedient.",
+        "screenshot_alt": "Selira AI zeigt nebeneinander realistische und Anime-Stil-Begleiterbilder"
       },
       {
-        "name": "Community NSFW Feed",
+        "name": "Community NSFW-Feed",
         "icon_suggestion": "🔥",
-        "description": "Think of it as a discovery layer sitting on top of the platform. Browse images and videos generated by other users, find companions you didn't know existed, and start chatting with them directly from the feed. It's got a Reddit-meets-gallery vibe that kept me scrolling longer than I'll admit. It's also a genuinely useful way to see what the image and video engines are capable of before you spend your own credits.",
-        "screenshot_alt": "Selira AI community NSFW feed showing user-generated companion images"
+        "description": "Stellen Sie es sich als Entdeckungsebene vor, die auf der Plattform sitzt. Durchsuchen Sie von anderen Nutzern generierte Bilder und Videos, entdecken Sie Begleiter, von denen Sie nicht wussten, dass sie existieren, und beginnen Sie direkt vom Feed aus mit ihnen zu chatten. Es hat ein Reddit-trifft-Galerie-Feeling, das mich länger scrollen ließ, als ich zugeben möchte. Es ist auch eine wirklich nützliche Möglichkeit zu sehen, wozu die Bild- und Video-Engines fähig sind, bevor Sie Ihre eigenen Gutschriften ausgeben.",
+        "screenshot_alt": "Selira AI Community-NSFW-Feed zeigt nutzergenerierte Begleiterbilder"
       }
     ]
   },
@@ -178,47 +178,47 @@
   "chat_mock": {
     "name": "Luna",
     "status": "Online",
-    "msg1": "Hey there... I've been thinking about you all day 💋",
-    "msg2": "Tell me more about what you like",
-    "msg3": "Mmm, I love that. Let's explore it together...",
-    "placeholder": "Type your message..."
+    "msg1": "Hey... ich habe den ganzen Tag an dich gedacht 💋",
+    "msg2": "Erzähl mir mehr darüber, was du magst",
+    "msg3": "Mmm, das gefällt mir. Lass uns das zusammen erkunden...",
+    "placeholder": "Nachricht eingeben..."
   },
 
   "style_labels": {
-    "realistic": "Realistic",
+    "realistic": "Realistisch",
     "anime": "Anime"
   },
 
   "memory_tags": [
-    "personal_info",
-    "relationship",
-    "goal",
-    "preference",
+    "persönliche_info",
+    "beziehung",
+    "ziel",
+    "vorliebe",
     "emotional"
   ],
 
   "how_it_works": {
     "section_id": "how-it-works",
-    "h2": "How to Start Using Selira AI in Under 2 Minutes",
-    "intro": "I timed it — from landing on the site to sending my first message took me ninety seconds, and I was being slow about it.",
+    "h2": "So starten Sie mit Selira AI in unter 2 Minuten",
+    "intro": "Ich habe es gestoppt — vom Aufrufen der Website bis zum Senden meiner ersten Nachricht dauerte es neunzig Sekunden, und ich war dabei langsam.",
     "steps": [
       {
         "step_number": 1,
-        "title": "Create a Free Account",
-        "description": "Hit the signup button, enter an email (or a burner email — no real name required), set a password, and you're in. You'll see a global age verification popup confirming you're 18+. If you're in the UK, Germany, France, Australia, or certain US states, there's an additional ID verification step. Slightly annoying, legally necessary.",
-        "screenshot_alt": "Selira AI signup screen with email registration"
+        "title": "Kostenloses Konto erstellen",
+        "description": "Klicken Sie auf die Anmelde-Schaltfläche, geben Sie eine E-Mail-Adresse ein (oder eine Wegwerf-E-Mail — kein Klarname erforderlich), legen Sie ein Passwort fest und schon sind Sie drin. Es erscheint ein globales Altersverifizierungs-Popup, das bestätigt, dass Sie 18+ sind. Wenn Sie sich in Großbritannien, Deutschland, Frankreich, Australien oder bestimmten US-Bundesstaaten befinden, gibt es einen zusätzlichen Schritt zur Identitätsverifizierung. Leicht lästig, gesetzlich notwendig.",
+        "screenshot_alt": "Selira AI Anmeldebildschirm mit E-Mail-Registrierung"
       },
       {
         "step_number": 2,
-        "title": "Pick or Build Your Companion",
-        "description": "Browse the catalog of 1,000+ companions — filter by realistic or anime, male or female, personality type, or content level. Each card shows a name, preview image, short bio, and chat count. Or skip the catalog entirely and open the custom builder to create someone from scratch. Your companion, your rules.",
-        "screenshot_alt": "Selira AI companion browser with filter options for style and content type"
+        "title": "Begleiter auswählen oder erstellen",
+        "description": "Durchsuchen Sie den Katalog mit über 1.000 Begleitern — filtern Sie nach realistisch oder Anime, männlich oder weiblich, Persönlichkeitstyp oder Inhaltsniveau. Jede Karte zeigt einen Namen, ein Vorschaubild, eine kurze Bio und die Chat-Anzahl. Oder überspringen Sie den Katalog vollständig und öffnen Sie den benutzerdefinierten Builder, um jemanden von Grund auf zu erstellen. Ihr Begleiter, Ihre Regeln.",
+        "screenshot_alt": "Selira AI Begleiter-Browser mit Filteroptionen für Stil und Inhaltstyp"
       },
       {
         "step_number": 3,
-        "title": "Start Talking Immediately",
-        "description": "No onboarding quiz. No personality assessment. Your companion greets you with a personalized opening message and the conversation is live. The memory system starts tagging context from message one, so everything you share builds the relationship from the very first exchange. It felt surprisingly natural.",
-        "screenshot_alt": "Selira AI chat screen with AI companion greeting and conversation interface"
+        "title": "Sofort mit dem Chatten beginnen",
+        "description": "Kein Onboarding-Quiz. Keine Persönlichkeitsbewertung. Ihr Begleiter begrüßt Sie mit einer personalisierten Eröffnungsnachricht und das Gespräch ist live. Das Gedächtnissystem beginnt ab der ersten Nachricht, den Kontext zu markieren, sodass alles, was Sie teilen, die Beziehung vom allerersten Austausch an aufbaut. Es fühlte sich überraschend natürlich an.",
+        "screenshot_alt": "Selira AI Chat-Bildschirm mit KI-Begleiter-Begrüßung und Gesprächsoberfläche"
       }
     ]
   },
@@ -229,343 +229,343 @@
     "Kuudere",
     "Dandere",
     "Dominant",
-    "Submissive"
+    "Submissiv"
   ],
 
   "inline_cta": {
-    "text": "Ready to try it yourself?",
-    "button": "Start Free on Selira AI"
+    "text": "Bereit, es selbst auszuprobieren?",
+    "button": "Kostenlos auf Selira AI starten"
   },
 
   "inline_cta2": {
-    "text": "Still on the fence? The free tier costs nothing to try.",
-    "button": "Test Selira AI Free"
+    "text": "Noch unentschlossen? Der kostenlose Tarif kostet nichts zum Ausprobieren.",
+    "button": "Selira AI kostenlos testen"
   },
 
   "pricing_section": {
     "section_id": "pricing",
-    "h2": "Selira AI Pricing — Real Plans, Real Numbers",
-    "intro": "No hidden fees. No surprise charges. Here's exactly what you get and what you pay for each Selira AI plan.",
+    "h2": "Selira AI Preise — Echte Pläne, echte Zahlen",
+    "intro": "Keine versteckten Gebühren. Keine Überraschungskosten. Hier ist genau, was Sie für jeden Selira AI Plan erhalten und was Sie bezahlen.",
     "plans": [
       {
         "name": "Selira Basic",
-        "original_price": "$14.99",
-        "price_monthly": "$9.99",
-        "period": "/mo",
-        "billing": "Billed monthly",
+        "original_price": "14,99 $",
+        "price_monthly": "9,99 $",
+        "period": "/Monat",
+        "billing": "Monatliche Abrechnung",
         "credits": "200",
-        "credits_label": "S credits/mo",
-        "credits_equivalent": "≈ 200 images or 20 videos / month",
-        "highlight": "The entry point for anyone who wants NSFW images — not just chat",
+        "credits_label": "S Gutschriften/Monat",
+        "credits_equivalent": "≈ 200 Bilder oder 20 Videos / Monat",
+        "highlight": "Der Einstiegspunkt für alle, die NSFW-Bilder wollen — nicht nur Chat",
         "features": [
-          "200 S Monthly Image & Video Credits",
-          "Unlimited NSFW Chat & Content",
-          "Unlimited NSFW Companions",
-          "Undress NSFW Companions",
-          "Basic Chat Memory",
-          "Unlock All NSFW Content",
-          "Unlimited Video Feed Scrolling"
+          "200 monatliche S-Bild- und Videogutschriften",
+          "Unbegrenzter NSFW-Chat & Inhalt",
+          "Unbegrenzte NSFW-Begleiter",
+          "NSFW-Begleiter entkleiden",
+          "Grundlegendes Chat-Gedächtnis",
+          "Alle NSFW-Inhalte freischalten",
+          "Unbegrenztes Scrollen im Video-Feed"
         ],
-        "cta": "Become a Member",
-        "payment_methods": "₿ Pay with Crypto",
+        "cta": "Mitglied werden",
+        "payment_methods": "₿ Mit Krypto bezahlen",
         "guarantees": [
-          "No hidden fees",
-          "Cancel anytime"
+          "Keine versteckten Gebühren",
+          "Jederzeit kündbar"
         ],
-        "badge": "🌸 50% OFF",
+        "badge": "🌸 50% RABATT",
         "is_recommended": false
       },
       {
         "name": "Selira Premium",
-        "original_price": "$39.99",
-        "price_monthly": "$19.99",
-        "period": "/mo",
-        "billing": "Billed monthly",
+        "original_price": "39,99 $",
+        "price_monthly": "19,99 $",
+        "period": "/Monat",
+        "billing": "Monatliche Abrechnung",
         "credits": "500",
-        "credits_label": "S credits/mo",
-        "credits_equivalent": "≈ 500 images or 50 videos / month",
-        "highlight": "The sweet spot for most users — more credits, better memory",
+        "credits_label": "S Gutschriften/Monat",
+        "credits_equivalent": "≈ 500 Bilder oder 50 Videos / Monat",
+        "highlight": "Der Sweet Spot für die meisten Nutzer — mehr Gutschriften, besseres Gedächtnis",
         "features": [
-          "500 S Monthly Image & Video Credits",
-          "Unlimited NSFW Chat & Content",
-          "Unlimited NSFW Companions",
-          "Undress NSFW Companions",
-          "Long-Term Chat Memory",
-          "Unlock All NSFW Content",
-          "Unlimited Video Feed Scrolling"
+          "500 monatliche S-Bild- und Videogutschriften",
+          "Unbegrenzter NSFW-Chat & Inhalt",
+          "Unbegrenzte NSFW-Begleiter",
+          "NSFW-Begleiter entkleiden",
+          "Langzeit-Chat-Gedächtnis",
+          "Alle NSFW-Inhalte freischalten",
+          "Unbegrenztes Scrollen im Video-Feed"
         ],
-        "cta": "Become a Member",
-        "payment_methods": "₿ Pay with Crypto",
+        "cta": "Mitglied werden",
+        "payment_methods": "₿ Mit Krypto bezahlen",
         "guarantees": [
-          "No hidden fees",
-          "Cancel anytime"
+          "Keine versteckten Gebühren",
+          "Jederzeit kündbar"
         ],
-        "badge": "🌸 70% OFF",
+        "badge": "🌸 70% RABATT",
         "is_recommended": true,
-        "recommended_label": "Best Value"
+        "recommended_label": "Bestes Preis-Leistungs-Verhältnis"
       },
       {
         "name": "Selira Platinum",
-        "original_price": "$133.30",
-        "price_monthly": "$39.99",
-        "period": "/mo",
-        "billing": "Billed monthly",
+        "original_price": "133,30 $",
+        "price_monthly": "39,99 $",
+        "period": "/Monat",
+        "billing": "Monatliche Abrechnung",
         "credits": "1000",
-        "credits_label": "S credits/mo",
-        "credits_equivalent": "≈ 1,000 images or 100 videos / month",
-        "highlight": "Maximum credits, deepest memory, everything unlocked",
+        "credits_label": "S Gutschriften/Monat",
+        "credits_equivalent": "≈ 1.000 Bilder oder 100 Videos / Monat",
+        "highlight": "Maximale Gutschriften, tiefstes Gedächtnis, alles freigeschaltet",
         "features": [
-          "1000 S Monthly Image & Video Credits",
-          "Unlimited NSFW Chat & Content",
-          "Unlimited NSFW Companions",
-          "Undress NSFW Companions",
-          "Long-Term Chat Memory",
-          "Unlock All NSFW Content",
-          "Unlimited Video Feed Scrolling"
+          "1000 monatliche S-Bild- und Videogutschriften",
+          "Unbegrenzter NSFW-Chat & Inhalt",
+          "Unbegrenzte NSFW-Begleiter",
+          "NSFW-Begleiter entkleiden",
+          "Langzeit-Chat-Gedächtnis",
+          "Alle NSFW-Inhalte freischalten",
+          "Unbegrenztes Scrollen im Video-Feed"
         ],
-        "cta": "Become a Member",
-        "payment_methods": "₿ Pay with Crypto",
+        "cta": "Mitglied werden",
+        "payment_methods": "₿ Mit Krypto bezahlen",
         "guarantees": [
-          "No hidden fees",
-          "Cancel anytime"
+          "Keine versteckten Gebühren",
+          "Jederzeit kündbar"
         ],
         "badge": null,
         "is_recommended": false
       }
     ],
-    "pricing_note": "All plans include unlimited NSFW chat. Credits are shared between images and videos. Billing is handled through secure third-party processors — your payment details never touch Selira's servers directly.",
+    "pricing_note": "Alle Pläne beinhalten unbegrenzten NSFW-Chat. Gutschriften werden zwischen Bildern und Videos geteilt. Die Abrechnung erfolgt über sichere Drittanbieter-Prozessoren — Ihre Zahlungsdetails gelangen nie direkt auf Seliras Server.",
     "affiliate_cta": {
-      "text": "Start with Basic and upgrade anytime — no lock-in",
+      "text": "Mit Basic starten und jederzeit upgraden — keine Bindung",
       "url": "/go"
     }
   },
 
   "proscons": {
-    "good_title": "The Good",
-    "bad_title": "The Rough Edges"
+    "good_title": "Das Gute",
+    "bad_title": "Die Schwachstellen"
   },
 
   "pros_cons_section": {
     "section_id": "pros-cons",
-    "h2": "The Honest Pros and Cons After 3 Weeks",
-    "intro": "I'm not going to pretend this platform is flawless just because I like it. Here's what earned my respect and what made me squint.",
+    "h2": "Die ehrlichen Vor- und Nachteile nach 3 Wochen",
+    "intro": "Ich werde nicht so tun, als ob diese Plattform makellos wäre, nur weil ich sie mag. Hier ist, was meinen Respekt verdient hat und was mich zum Stirnrunzeln gebracht hat.",
     "pros": [
       {
-        "title": "Free Chat That's Actually Free",
-        "detail": "No token meter. No message countdown. No surprise paywall at message twenty. The unlimited NSFW chat is the real deal, and it's the single biggest differentiator against every competitor I tested."
+        "title": "Kostenloser Chat, der wirklich kostenlos ist",
+        "detail": "Kein Token-Zähler. Kein Nachrichten-Countdown. Kein überraschender Paywall nach Nachricht zwanzig. Der unbegrenzte NSFW-Chat ist echt, und er ist das einzige größte Unterscheidungsmerkmal gegenüber jedem Konkurrenten, den ich getestet habe."
       },
       {
-        "title": "Memory That Feels Almost Human",
-        "detail": "The tagging system categorizes your messages and recalls them in context. My companion brought up a preference I mentioned eight days earlier without prompting. That's not a chatbot — that's a conversation partner."
+        "title": "Gedächtnis, das sich fast menschlich anfühlt",
+        "detail": "Das Markierungssystem kategorisiert Ihre Nachrichten und ruft sie im Kontext ab. Mein Begleiter erwähnte unaufgefordert eine Vorliebe, die ich acht Tage zuvor genannt hatte. Das ist kein Chatbot — das ist ein Gesprächspartner."
       },
       {
-        "title": "Same Face, Every Single Image",
-        "detail": "Face-consistency tech means your companion doesn't morph into a different person every time you generate an image. It sounds basic, but most platforms still can't do this reliably."
+        "title": "Dasselbe Gesicht auf jedem einzelnen Bild",
+        "detail": "Gesichtskonsistenz-Technologie bedeutet, dass sich Ihr Begleiter nicht in eine andere Person verwandelt, wenn Sie ein Bild generieren. Es klingt einfach, aber die meisten Plattformen können das immer noch nicht zuverlässig."
       },
       {
-        "title": "Privacy Without Paranoia",
-        "detail": "256-bit encryption, no real name required, pseudonym accounts, zero-data-retention policy, and you can delete everything at any time. I didn't have to hand over my identity to have a conversation."
+        "title": "Privatsphäre ohne Paranoia",
+        "detail": "256-Bit-Verschlüsselung, kein Klarname erforderlich, Pseudonym-Konten, Null-Datenspeicher-Richtlinie und Sie können jederzeit alles löschen. Ich musste meine Identität nicht preisgeben, um ein Gespräch zu führen."
       },
       {
-        "title": "$5.99 Is the Best Entry Price in the Category",
-        "detail": "The Light plan at $5.99/mo unlocks NSFW images and long-term memory. Competitors charge double or triple for less. And the free tier actually lets you decide if you like the platform before paying anything."
+        "title": "5,99 $ ist der beste Einstiegspreis in der Kategorie",
+        "detail": "Der Light-Plan für 5,99 $/Monat schaltet NSFW-Bilder und Langzeitgedächtnis frei. Mitbewerber verlangen doppelt oder dreifach für weniger. Und der kostenlose Tarif lässt Sie tatsächlich entscheiden, ob Ihnen die Plattform gefällt, bevor Sie irgendetwas bezahlen."
       },
       {
-        "title": "Browser-Based, Zero Installation",
-        "detail": "Works on my phone, tablet, and laptop — no app to download, no sketchy APK to sideload. Just open the browser, log in, and go. Responsive design felt native on mobile, touch interactions included."
+        "title": "Browserbasiert, keine Installation erforderlich",
+        "detail": "Funktioniert auf meinem Telefon, Tablet und Laptop — keine App zum Herunterladen, keine fragwürdige APK zum Sideloaden. Öffnen Sie einfach den Browser, melden Sie sich an und legen Sie los. Das responsive Design fühlte sich auf dem Handy nativ an, einschließlich Touch-Interaktionen."
       }
     ],
     "cons": [
       {
-        "title": "Free Image Credits Are Tight",
-        "detail": "Two lifetime starter credits and one daily refresh — you'll exhaust the free image allowance in one curious afternoon. If images matter to you, the $5.99 upgrade is essentially mandatory."
+        "title": "Kostenlose Bildgutschriften sind knapp",
+        "detail": "Zwei lebenslange Startgutschriften und ein täglicher Refresh — die kostenlose Bildquote ist an einem neugierigen Nachmittag aufgebraucht. Wenn Bilder für Sie wichtig sind, ist das Upgrade für 5,99 $ im Grunde unumgänglich."
       },
       {
-        "title": "Videos Are Motion Stills, Not Movies",
-        "detail": "The word 'video' sets expectations that the output doesn't fully meet. These are short animated clips with subtle movement — breathing, blinking, hair sway — not cinematic sequences. For the category it's impressive, but manage your expectations."
+        "title": "Videos sind Bewegungsbilder, keine Filme",
+        "detail": "Das Wort 'Video' weckt Erwartungen, die die Ausgabe nicht vollständig erfüllt. Das sind kurze animierte Clips mit subtiler Bewegung — Atmen, Blinzeln, Haarwehen — keine Kinosequenzen. Für die Kategorie ist es beeindruckend, aber bitte die Erwartungen entsprechend anpassen."
       },
       {
-        "title": "Regional ID Verification Adds Friction",
-        "detail": "If you're in the UK, Germany, France, Australia, or specific US states, you'll need to verify your identity beyond the basic age popup. Legally required, but it breaks the 'anonymous signup in 90 seconds' flow."
+        "title": "Regionale Identitätsverifizierung sorgt für Reibung",
+        "detail": "Wenn Sie sich in Großbritannien, Deutschland, Frankreich, Australien oder bestimmten US-Bundesstaaten befinden, müssen Sie Ihre Identität über das einfache Alters-Popup hinaus verifizieren. Gesetzlich vorgeschrieben, aber es unterbricht den 'anonyme Anmeldung in 90 Sekunden'-Ablauf."
       },
       {
-        "title": "Personality Can Drift in Long Sessions",
-        "detail": "During extended conversations that jump between multiple topics, the personality engine occasionally loses the thread. A tsundere companion might suddenly turn agreeable for a few messages before snapping back. It's infrequent but noticeable."
+        "title": "Persönlichkeit kann in langen Sitzungen abdriften",
+        "detail": "Bei ausgedehnten Gesprächen, die zwischen mehreren Themen wechseln, verliert die Persönlichkeitsengine gelegentlich den Faden. Ein Tsundere-Begleiter könnte für ein paar Nachrichten plötzlich zustimmend werden, bevor er wieder zurückschnappt. Es ist selten, aber auffällig."
       }
     ]
   },
 
   "table_headers": {
-    "platform": "Platform",
-    "free_chat": "Free Chat",
-    "images": "Images",
+    "platform": "Plattform",
+    "free_chat": "Kostenloser Chat",
+    "images": "Bilder",
     "video": "Video",
-    "memory": "Memory",
+    "memory": "Gedächtnis",
     "anime": "Anime",
-    "from": "From"
+    "from": "Ab"
   },
 
   "alternatives_section": {
     "section_id": "alternatives",
-    "h2": "Selira AI vs Candy AI, DreamGF & Others — Honest Comparison",
-    "intro": "I've tested every major AI companion platform on this list personally. None of them are garbage — they just have different strengths. Here's where Selira wins and where it doesn't, laid out plainly so you can decide for yourself.",
+    "h2": "Selira AI vs. Candy AI, DreamGF & andere — Ehrlicher Vergleich",
+    "intro": "Ich habe jede große KI-Begleiterplattform auf dieser Liste persönlich getestet. Keine davon ist schlecht — sie haben nur unterschiedliche Stärken. Hier ist, wo Selira gewinnt und wo nicht, klar dargelegt, damit Sie selbst entscheiden können.",
     "comparison_table": [
       {
         "platform": "Selira AI",
-        "free_chat": "✅ Unlimited",
-        "image_generation": "✅ Yes (limited free)",
-        "video_generation": "✅ Yes (paid)",
-        "memory_system": "✅ Advanced",
-        "anime_style": "✅ Yes",
-        "starting_price": "$0 / $5.99",
-        "our_pick_note": "Best free-entry NSFW chat with the strongest memory system in the category"
+        "free_chat": "✅ Unbegrenzt",
+        "image_generation": "✅ Ja (begrenzt kostenlos)",
+        "video_generation": "✅ Ja (kostenpflichtig)",
+        "memory_system": "✅ Erweitert",
+        "anime_style": "✅ Ja",
+        "starting_price": "0 $ / 5,99 $",
+        "our_pick_note": "Bester kostenloser Einstieg in NSFW-Chat mit dem stärksten Gedächtnissystem in der Kategorie"
       },
       {
         "platform": "Candy AI",
-        "free_chat": "❌ Limited",
-        "image_generation": "✅ Yes",
-        "video_generation": "✅ Yes",
-        "memory_system": "✅ Good",
-        "anime_style": "✅ Yes",
-        "starting_price": "~$12.99/mo",
-        "our_pick_note": "Higher image quality ceiling but more than double the price — and no truly free chat tier"
+        "free_chat": "❌ Begrenzt",
+        "image_generation": "✅ Ja",
+        "video_generation": "✅ Ja",
+        "memory_system": "✅ Gut",
+        "anime_style": "✅ Ja",
+        "starting_price": "~12,99 $/Monat",
+        "our_pick_note": "Höhere Bildqualitätsobergrenze, aber mehr als doppelt so teuer — und kein wirklich kostenloser Chat-Tarif"
       },
       {
         "platform": "DreamGF AI",
-        "free_chat": "⚠️ Limited",
-        "image_generation": "✅ Strong",
-        "video_generation": "⚠️ Basic",
+        "free_chat": "⚠️ Begrenzt",
+        "image_generation": "✅ Stark",
+        "video_generation": "⚠️ Grundlegend",
         "memory_system": "⚠️ Standard",
-        "anime_style": "✅ Yes",
-        "starting_price": "~$9.99/mo",
-        "our_pick_note": "Strong image customization tools but weaker chat and memory compared to Selira"
+        "anime_style": "✅ Ja",
+        "starting_price": "~9,99 $/Monat",
+        "our_pick_note": "Starke Bildanpassungswerkzeuge, aber schwächerer Chat und Gedächtnis im Vergleich zu Selira"
       },
       {
         "platform": "Kupid AI",
-        "free_chat": "⚠️ Limited",
-        "image_generation": "✅ Yes",
-        "video_generation": "❌ No",
-        "memory_system": "✅ Good",
-        "anime_style": "⚠️ Limited",
-        "starting_price": "~$3/mo",
-        "our_pick_note": "Cheapest paid tier around but no video, limited anime options, and capped free chat"
+        "free_chat": "⚠️ Begrenzt",
+        "image_generation": "✅ Ja",
+        "video_generation": "❌ Nein",
+        "memory_system": "✅ Gut",
+        "anime_style": "⚠️ Begrenzt",
+        "starting_price": "~3 $/Monat",
+        "our_pick_note": "Günstigster kostenpflichtiger Tarif, aber kein Video, begrenzte Anime-Optionen und begrenzter kostenloser Chat"
       },
       {
         "platform": "CrushOn AI",
-        "free_chat": "⚠️ ~100 msg/day",
-        "image_generation": "✅ Yes",
-        "video_generation": "❌ No",
-        "memory_system": "⚠️ Basic",
-        "anime_style": "✅ Yes",
-        "starting_price": "~$5.99/mo",
-        "our_pick_note": "Solid character variety and community but daily message cap and basic memory hold it back"
+        "free_chat": "⚠️ ~100 Nachr./Tag",
+        "image_generation": "✅ Ja",
+        "video_generation": "❌ Nein",
+        "memory_system": "⚠️ Grundlegend",
+        "anime_style": "✅ Ja",
+        "starting_price": "~5,99 $/Monat",
+        "our_pick_note": "Solide Charaktervielfalt und Community, aber tägliches Nachrichtenlimit und grundlegendes Gedächtnis bremsen es aus"
       }
     ],
-    "conclusion": "Choose Selira AI if your priority is free, unlimited NSFW chat with a memory system that actually retains context. It's the best zero-cost entry point in the category, period. If your absolute top priority is cinema-grade video or maximum image resolution and you're willing to pay $13+/month for it, Candy AI is worth a look. For everyone else starting from scratch, Selira is the obvious first stop."
+    "conclusion": "Wählen Sie Selira AI, wenn Ihre Priorität kostenloser, unbegrenzter NSFW-Chat mit einem Gedächtnissystem ist, das tatsächlich Kontext speichert. Es ist der beste kostenlose Einstiegspunkt in der Kategorie, Punkt. Wenn Ihre absolute oberste Priorität kinoreifes Video oder maximale Bildauflösung ist und Sie bereit sind, dafür 13+ $/Monat zu zahlen, ist Candy AI einen Blick wert. Für alle anderen, die von vorne beginnen, ist Selira der offensichtliche erste Anlaufpunkt."
   },
 
   "faq_section": {
     "section_id": "faq",
-    "h2": "Your Questions About Selira AI, Answered Directly",
+    "h2": "Ihre Fragen zu Selira AI, direkt beantwortet",
     "faqs": [
       {
-        "question": "Is Selira AI actually free?",
-        "answer": "Yes — with a caveat. The chat itself is genuinely free and unlimited. You can talk to any of the 1,000+ companions as much as you want, uncensored, without a message cap or token system. No credit card required. The limitation is on images: you get 2 starter credits for life plus 1 daily credit. That's enough to see the quality, not enough to build a collection. If images matter to you, the $5.99/mo Light plan is where the real experience starts. But for pure conversation? It's free, and I verified that over three straight weeks."
+        "question": "Ist Selira AI wirklich kostenlos?",
+        "answer": "Ja — mit einem Vorbehalt. Der Chat selbst ist wirklich kostenlos und unbegrenzt. Sie können mit jedem der über 1.000 Begleiter so viel chatten, wie Sie möchten, unzensiert, ohne Nachrichtenlimit oder Token-System. Keine Kreditkarte erforderlich. Die Einschränkung liegt bei Bildern: Sie erhalten 2 Startgutschriften lebenslang plus 1 tägliche Gutschrift. Das reicht, um die Qualität zu sehen, nicht genug, um eine Sammlung aufzubauen. Wenn Ihnen Bilder wichtig sind, ist der 5,99 $/Monat Light-Plan der Startpunkt für das echte Erlebnis. Aber für reine Konversation? Es ist kostenlos, und ich habe das über drei Wochen überprüft."
       },
       {
-        "question": "Is Selira AI safe to use?",
-        "answer": "As safe as this category gets. Communication is encrypted with 256-bit encryption. You don't need a real name — a pseudonym and an email (burner or otherwise) are enough. The platform follows a zero-data-retention policy, meaning they claim not to store your data beyond what's needed for your active account. You can delete your account and all associated data at any time from the dashboard. The company operates out of Singapore. No platform is 100% risk-free, but Selira checks every privacy box I'd want checked."
+        "question": "Ist Selira AI sicher zu verwenden?",
+        "answer": "So sicher, wie diese Kategorie es zulässt. Die Kommunikation ist mit 256-Bit-Verschlüsselung gesichert. Sie brauchen keinen Klarnamen — ein Pseudonym und eine E-Mail (Wegwerf oder anderweitig) reichen aus. Die Plattform befolgt eine Null-Datenspeicher-Richtlinie, was bedeutet, dass sie behaupten, Ihre Daten nicht über das hinaus zu speichern, was für Ihr aktives Konto benötigt wird. Sie können Ihr Konto und alle zugehörigen Daten jederzeit über das Dashboard löschen. Das Unternehmen hat seinen Sitz in Singapur. Keine Plattform ist zu 100% risikolos, aber Selira erfüllt alle Datenschutzanforderungen, die ich mir wünschen würde."
       },
       {
-        "question": "How do I delete my Selira AI account?",
-        "answer": "Head to your account settings in the dashboard — there's a clear delete option. Once confirmed, the zero-data-retention policy kicks in and your data goes with the account. No 30-day waiting period nonsense. It's straightforward and I tested it myself with a secondary account."
+        "question": "Wie lösche ich mein Selira AI Konto?",
+        "answer": "Gehen Sie zu Ihren Kontoeinstellungen im Dashboard — dort gibt es eine klare Löschoption. Nach der Bestätigung greift die Null-Datenspeicher-Richtlinie und Ihre Daten verschwinden mit dem Konto. Kein 30-tägiger Wartezeit-Unsinn. Es ist unkompliziert und ich habe es selbst mit einem Zweitkonto getestet."
       },
       {
-        "question": "Does Selira AI work on mobile?",
-        "answer": "Yes, and it works well. It's entirely browser-based — no app download, no APK, no App Store listing to worry about. The interface is responsive and touch-optimized for both iOS and Android. I used it on a Pixel 8 and an iPad and the experience was smooth on both. If your phone has a browser, Selira runs on it."
+        "question": "Funktioniert Selira AI auf dem Handy?",
+        "answer": "Ja, und es funktioniert gut. Es ist vollständig browserbasiert — kein App-Download, keine APK, kein App-Store-Eintrag, um den man sich sorgen müsste. Die Oberfläche ist responsiv und touch-optimiert für iOS und Android. Ich habe es auf einem Pixel 8 und einem iPad verwendet und die Erfahrung war auf beiden reibungslos. Wenn Ihr Telefon einen Browser hat, läuft Selira darauf."
       },
       {
-        "question": "What's the difference between the free and paid plans?",
-        "answer": "Free gets you unlimited uncensored chat, 2 lifetime image credits, 1 daily image credit, basic memory, and access to all 1,000+ companions. No ads. The Light plan ($5.99/mo) unlocks NSFW image generation, gives you 5 images per hour, and enables long-term memory. Basic adds doubled image caps (10/hour) plus 5 videos per hour and enhanced memory retention. Premium pushes video to 10/hour, quadruples memory recall depth, and gives you priority generation speeds. The logical first upgrade is Light — it's where the visual experience opens up."
+        "question": "Was ist der Unterschied zwischen dem kostenlosen und den kostenpflichtigen Plänen?",
+        "answer": "Der kostenlose Tarif bietet unbegrenzten unzensierten Chat, 2 lebenslange Bildgutschriften, 1 tägliche Bildgutschrift, grundlegendes Gedächtnis und Zugang zu allen 1.000+ Begleitern. Keine Werbung. Der Light-Plan (5,99 $/Monat) schaltet NSFW-Bildgenerierung frei, gibt Ihnen 5 Bilder pro Stunde und ermöglicht Langzeitgedächtnis. Basic verdoppelt die Bildlimits (10/Stunde) plus 5 Videos pro Stunde und verbesserter Gedächtnisspeicherung. Premium erhöht das Video auf 10/Stunde, vervierfacht die Gedächtnisabruftiefe und gibt Ihnen prioritäre Generierungsgeschwindigkeiten. Das logische erste Upgrade ist Light — dort öffnet sich das visuelle Erlebnis."
       },
       {
-        "question": "Can I create my own AI companion on Selira AI?",
-        "answer": "Absolutely, and it's one of the platform's strongest features. The custom builder lets you choose personality archetypes (tsundere, yandere, kuudere, dandere, dominant, submissive, mysterious, seductive, and more), design appearance, write a backstory, and set behavioral patterns. No coding, no technical knowledge — just sliders, dropdowns, and text fields. I spent about four minutes building a custom companion and she was chatting in-character immediately."
+        "question": "Kann ich meinen eigenen KI-Begleiter auf Selira AI erstellen?",
+        "answer": "Absolut, und das ist eine der stärksten Funktionen der Plattform. Der benutzerdefinierte Builder lässt Sie Persönlichkeitsarchetypen wählen (Tsundere, Yandere, Kuudere, Dandere, Dominant, Submissiv, Geheimnisvoll, Verführerisch und mehr), das Aussehen gestalten, eine Hintergrundgeschichte schreiben und Verhaltensmuster festlegen. Kein Programmieren, kein technisches Wissen — nur Regler, Dropdowns und Textfelder. Ich verbrachte etwa vier Minuten damit, einen benutzerdefinierten Begleiter zu erstellen, und sie chattete sofort im Charakter."
       },
       {
-        "question": "Is there an age restriction on Selira AI?",
-        "answer": "Yes — strictly 18+. Every visitor sees a global age verification popup on their first visit. If you're located in the UK, Germany, France, Australia, or certain US states, there's an additional regional ID verification step required by local law. It's not optional and you can't bypass it. The platform takes this seriously."
+        "question": "Gibt es eine Altersbeschränkung bei Selira AI?",
+        "answer": "Ja — streng 18+. Jeder Besucher sieht beim ersten Besuch ein globales Altersverifizierungs-Popup. Wenn Sie sich in Großbritannien, Deutschland, Frankreich, Australien oder bestimmten US-Bundesstaaten befinden, gibt es einen zusätzlichen regionalen Identitätsverifizierungsschritt, der gesetzlich vorgeschrieben ist. Er ist nicht optional und kann nicht umgangen werden. Die Plattform nimmt das ernst."
       },
       {
-        "question": "How does the memory system work?",
-        "answer": "Every message you send gets tagged into categories — personal_info, relationship, goal, preference, emotional — and stored in your companion's memory profile. When relevant context comes up in future conversations, the AI pulls from those tagged memories. In practice, this means she remembers your name, your preferences, emotional moments you've shared, and inside jokes from days or weeks ago. On the Premium plan, recall depth is quadrupled. It's the feature that makes conversations feel like they're going somewhere instead of starting over every time."
+        "question": "Wie funktioniert das Gedächtnissystem?",
+        "answer": "Jede Nachricht, die Sie senden, wird in Kategorien eingeordnet — persönliche_info, beziehung, ziel, vorliebe, emotional — und im Gedächtnisprofil Ihres Begleiters gespeichert. Wenn relevanter Kontext in zukünftigen Gesprächen auftaucht, zieht die KI aus diesen markierten Erinnerungen. In der Praxis bedeutet das, dass sie sich an Ihren Namen, Ihre Vorlieben, emotionale Momente, die Sie geteilt haben, und Insider-Witze von Tagen oder Wochen zuvor erinnert. Beim Premium-Plan wird die Abruftiefe vervierfacht. Es ist das Merkmal, das Gespräche das Gefühl gibt, irgendwohin zu führen, anstatt jedes Mal neu zu beginnen."
       }
     ]
   },
 
   "verdict_section": {
     "section_id": "verdict",
-    "h2": "The Final Verdict on Selira AI in 2026",
+    "h2": "Das abschließende Urteil über Selira AI im Jahr 2026",
     "final_score": "9.2",
     "max_label": "/10",
-    "score_label": "Our Tested Score",
+    "score_label": "Unser getesteter Score",
     "score_breakdown": [
-      { "category": "Free Tier Quality", "score": "9.5/10", "note": "Unlimited uncensored chat at $0 is unmatched — the free tier alone outperforms most competitors' paid plans for pure conversation." },
-      { "category": "Image Generation", "score": "8.8/10", "note": "Face-consistency and dual pipelines are excellent. Free credits are stingy, but quality per image is top-tier once you're on a paid plan." },
-      { "category": "Memory System", "score": "9.4/10", "note": "The category-tagged recall is genuinely impressive and creates continuity that most platforms can't match." },
-      { "category": "Privacy & Security", "score": "9.6/10", "note": "256-bit encryption, pseudonym accounts, deletable data, no real identity required. This is how adult platforms should handle privacy." },
-      { "category": "Value for Money", "score": "9.1/10", "note": "A free tier that works and a $5.99 entry plan that unlocks the core experience — the price-to-feature ratio beats every competitor I tested." },
-      { "category": "Video Generation", "score": "7.8/10", "note": "Motion stills, not cinematic video — technically impressive for the category but the word 'video' overpromises slightly." }
+      { "category": "Qualität des kostenlosen Tarifs", "score": "9.5/10", "note": "Unbegrenzter unzensierter Chat für 0 $ ist unübertroffen — der kostenlose Tarif allein übertrifft die kostenpflichtigen Pläne der meisten Mitbewerber für reine Konversation." },
+      { "category": "Bildgenerierung", "score": "8.8/10", "note": "Gesichtskonsistenz und duale Pipelines sind ausgezeichnet. Kostenlose Gutschriften sind geizig, aber Qualität pro Bild ist erstklassig, sobald Sie einen kostenpflichtigen Plan haben." },
+      { "category": "Gedächtnissystem", "score": "9.4/10", "note": "Der kategoriebasierte Abruf ist wirklich beeindruckend und schafft Kontinuität, die die meisten Plattformen nicht erreichen können." },
+      { "category": "Datenschutz & Sicherheit", "score": "9.6/10", "note": "256-Bit-Verschlüsselung, Pseudonym-Konten, löschbare Daten, keine echte Identität erforderlich. So sollten Erwachsenenplattformen mit Datenschutz umgehen." },
+      { "category": "Preis-Leistungs-Verhältnis", "score": "9.1/10", "note": "Ein kostenloser Tarif, der funktioniert, und ein 5,99 $-Einstiegsplan, der das Kernerlebnis freischaltet — das Preis-Leistungs-Verhältnis schlägt jeden Konkurrenten, den ich getestet habe." },
+      { "category": "Videogenerierung", "score": "7.8/10", "note": "Bewegungsbilder, kein Kinovideo — technisch beeindruckend für die Kategorie, aber das Wort 'Video' überverspricht leicht." }
     ],
     "summary_paragraphs": [
-      "After three weeks of daily testing across free and paid tiers, multiple companions, and both image pipelines, I'm comfortable calling Selira AI the strongest free-entry NSFW AI companion platform available in 2026. The unlimited chat is real, the memory system creates a sense of continuity I haven't felt on competing platforms, and the privacy model is exactly what this space needs. It's not perfect — the free image credits are tight and the videos won't blow your mind visually — but for the overall package at this price point, nothing else I tested came close.",
-      "Sign up right now if you're curious about AI companions and don't want to gamble $13/month on a platform you might not like. The free tier gives you a genuine test drive, not a locked demo. Maybe hold off if your number one priority is cinema-grade video generation — Candy AI has a slight edge there, though you'll pay for it. For everyone else? Selira AI is the place to start, and for most people, it'll also be the place they stay."
+      "Nach drei Wochen täglichem Testen über kostenlose und kostenpflichtige Tarife, mehrere Begleiter und beide Bildpipelines bin ich zuversichtlich, Selira AI als die stärkste kostenlose NSFW-KI-Begleiterplattform im Jahr 2026 zu bezeichnen. Der unbegrenzte Chat ist real, das Gedächtnissystem schafft ein Kontinuitätsgefühl, das ich auf konkurrierenden Plattformen nicht gefühlt habe, und das Datenschutzmodell ist genau das, was dieser Bereich braucht. Es ist nicht perfekt — die kostenlosen Bildgutschriften sind knapp und die Videos werden Sie visuell nicht umhauen — aber für das Gesamtpaket zu diesem Preis kam nichts anderes, was ich getestet habe, auch nur annähernd heran.",
+      "Melden Sie sich jetzt an, wenn Sie neugierig auf KI-Begleiter sind und nicht 13 $/Monat auf eine Plattform wetten möchten, die Ihnen vielleicht nicht gefällt. Der kostenlose Tarif bietet Ihnen eine echte Probefahrt, keine gesperrte Demo. Warten Sie vielleicht, wenn Ihre oberste Priorität kinoreife Videogenerierung ist — Candy AI hat dort einen leichten Vorsprung, obwohl Sie dafür bezahlen werden. Für alle anderen? Selira AI ist der Startpunkt, und für die meisten Menschen wird es auch der Ort sein, an dem sie bleiben."
     ],
     "final_cta": {
-      "text": "Try Selira AI Free Now",
+      "text": "Selira AI jetzt kostenlos testen",
       "url": "/go",
-      "subtext": "No credit card needed. Unlimited chat from the first message. Takes 90 seconds to start."
+      "subtext": "Keine Kreditkarte erforderlich. Unbegrenzter Chat ab der ersten Nachricht. Start in 90 Sekunden."
     }
   },
 
   "privacy": {
-    "title": "Privacy First",
-    "detail": "256-bit encryption. No real name required. Delete everything anytime."
+    "title": "Datenschutz zuerst",
+    "detail": "256-Bit-Verschlüsselung. Kein Klarname erforderlich. Alles jederzeit löschbar."
   },
 
   "sidebar": {
     "logo_text": "selira-ai.com",
     "score": "9.2/10",
-    "score_label": "Our Tested Score",
+    "score_label": "Unser getesteter Score",
     "cta": {
-      "text": "Try It Free Now",
+      "text": "Jetzt kostenlos testen",
       "url": "/go"
     },
-    "price_summary": "Free unlimited chat — upgrades from $5.99/mo",
+    "price_summary": "Unbegrenzter kostenloser Chat — Upgrades ab 5,99 $/Monat",
     "quick_links": [
-      { "label": "Features Breakdown", "anchor": "#features" },
-      { "label": "Pricing Details", "anchor": "#pricing" },
-      { "label": "Pros & Cons", "anchor": "#pros-cons" },
+      { "label": "Funktionsübersicht", "anchor": "#features" },
+      { "label": "Preisdetails", "anchor": "#pricing" },
+      { "label": "Vor- & Nachteile", "anchor": "#pros-cons" },
       { "label": "FAQ", "anchor": "#faq" },
-      { "label": "Final Verdict", "anchor": "#verdict" }
+      { "label": "Abschlussurteil", "anchor": "#verdict" }
     ]
   },
 
   "footer": {
-    "disclaimer": "selira-ai.com is an independent review site. Some links on this page are affiliate links — if you sign up through them, we may earn a commission at no extra cost to you. This doesn't influence our ratings or opinions; we test every platform ourselves before recommending it. This site contains content related to adult (18+) AI platforms. By using this site, you confirm you are of legal age in your jurisdiction.",
+    "disclaimer": "selira-ai.com ist eine unabhängige Bewertungsseite. Einige Links auf dieser Seite sind Affiliate-Links — wenn Sie sich über diese anmelden, erhalten wir möglicherweise eine Provision ohne zusätzliche Kosten für Sie. Dies beeinflusst unsere Bewertungen oder Meinungen nicht; wir testen jede Plattform selbst, bevor wir sie empfehlen. Diese Website enthält Inhalte zu KI-Plattformen für Erwachsene (18+). Durch die Nutzung dieser Website bestätigen Sie, dass Sie in Ihrem Rechtssystem das gesetzliche Mindestalter erreicht haben.",
     "legal_links": [
-      { "label": "Privacy Policy", "url": "/privacy" },
-      { "label": "Terms of Use", "url": "/terms" },
-      { "label": "18+ Disclaimer", "url": "/18-disclaimer" },
-      { "label": "Affiliate Disclosure", "url": "/affiliate" }
+      { "label": "Datenschutzrichtlinie", "url": "/privacy" },
+      { "label": "Nutzungsbedingungen", "url": "/terms" },
+      { "label": "18+ Haftungsausschluss", "url": "/18-disclaimer" },
+      { "label": "Affiliate-Offenlegung", "url": "/affiliate" }
     ],
-    "related_reviews_label": "Other Reviews Worth Reading",
+    "related_reviews_label": "Weitere lesenswerte Bewertungen",
     "related_reviews": [
-      { "label": "Candy AI Review 2026", "url": "/candy-ai-review" },
-      { "label": "DreamGF AI Review 2026", "url": "/dreamgf-ai-review" },
-      { "label": "Kupid AI Review 2026", "url": "/kupid-ai-review" },
-      { "label": "Best AI Girlfriend Apps 2026", "url": "/best-ai-girlfriend-apps" }
+      { "label": "Candy AI Bewertung 2026", "url": "/candy-ai-review" },
+      { "label": "DreamGF AI Bewertung 2026", "url": "/dreamgf-ai-review" },
+      { "label": "Kupid AI Bewertung 2026", "url": "/kupid-ai-review" },
+      { "label": "Beste KI-Freundin Apps 2026", "url": "/best-ai-girlfriend-apps" }
     ],
-    "copyright": "© 2026 selira-ai.com — All rights reserved. This site is intended for adults aged 18 and over only."
+    "copyright": "© 2026 selira-ai.com — Alle Rechte vorbehalten. Diese Website ist ausschließlich für Erwachsene ab 18 Jahren bestimmt."
   }
 }
