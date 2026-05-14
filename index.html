@@ -1977,10 +1977,18 @@
                     <p class="section-subtitle" data-field="pricing_section.intro"></p>
 
                     <div class="pricing-grid">
-                        <!-- Free -->
+                        <!-- Basic -->
                         <div class="plan-card">
+                            <div class="plan-badge" data-field="pricing_section.plans.0.badge"></div>
                             <div class="plan-name" data-field="pricing_section.plans.0.name"></div>
-                            <div class="plan-price" data-field="pricing_section.plans.0.price_monthly"><span class="plan-price-period" data-field="pricing_section.plans.0.period"></span></div>
+                            <div class="plan-original-price" data-field="pricing_section.plans.0.original_price"></div>
+                            <div class="plan-price"><span data-field="pricing_section.plans.0.price_monthly"></span><span class="plan-price-period" data-field="pricing_section.plans.0.period"></span></div>
+                            <div class="plan-billing" data-field="pricing_section.plans.0.billing"></div>
+                            <div class="plan-credits">
+                                <span class="plan-credits-number" data-field="pricing_section.plans.0.credits"></span>
+                                <span class="plan-credits-label" data-field="pricing_section.plans.0.credits_label"></span>
+                            </div>
+                            <div class="plan-credits-equivalent" data-field="pricing_section.plans.0.credits_equivalent"></div>
                             <p class="plan-highlight" data-field="pricing_section.plans.0.highlight"></p>
                             <ul class="plan-features">
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.0"></span></li>
@@ -1988,14 +1996,30 @@
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.2"></span></li>
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.3"></span></li>
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.4"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.5"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.6"></span></li>
                             </ul>
                             <a href="https://selira.ai/?ref=selira-ai-com" class="btn-secondary plan-cta" rel="nofollow sponsored" data-field="pricing_section.plans.0.cta"></a>
+                            <div class="plan-payment" data-field="pricing_section.plans.0.payment_methods"></div>
+                            <div class="plan-guarantees">
+                                <span data-field="pricing_section.plans.0.guarantees.0"></span>
+                                <span data-field="pricing_section.plans.0.guarantees.1"></span>
+                            </div>
                         </div>
 
-                        <!-- Light -->
-                        <div class="plan-card">
+                        <!-- Premium (Recommended) -->
+                        <div class="plan-card plan-card-recommended">
+                            <div class="plan-recommended-badge" data-field="pricing_section.plans.1.recommended_label"></div>
+                            <div class="plan-badge" data-field="pricing_section.plans.1.badge"></div>
                             <div class="plan-name" data-field="pricing_section.plans.1.name"></div>
-                            <div class="plan-price" data-field="pricing_section.plans.1.price_monthly"><span class="plan-price-period" data-field="pricing_section.plans.1.period"></span></div>
+                            <div class="plan-original-price" data-field="pricing_section.plans.1.original_price"></div>
+                            <div class="plan-price"><span data-field="pricing_section.plans.1.price_monthly"></span><span class="plan-price-period" data-field="pricing_section.plans.1.period"></span></div>
+                            <div class="plan-billing" data-field="pricing_section.plans.1.billing"></div>
+                            <div class="plan-credits">
+                                <span class="plan-credits-number" data-field="pricing_section.plans.1.credits"></span>
+                                <span class="plan-credits-label" data-field="pricing_section.plans.1.credits_label"></span>
+                            </div>
+                            <div class="plan-credits-equivalent" data-field="pricing_section.plans.1.credits_equivalent"></div>
                             <p class="plan-highlight" data-field="pricing_section.plans.1.highlight"></p>
                             <ul class="plan-features">
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.0"></span></li>
@@ -2003,38 +2027,45 @@
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.2"></span></li>
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.3"></span></li>
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.4"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.5"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.6"></span></li>
                             </ul>
-                            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-secondary plan-cta" rel="nofollow sponsored" data-field="pricing_section.plans.1.cta"></a>
+                            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary plan-cta" rel="nofollow sponsored" data-field="pricing_section.plans.1.cta"></a>
+                            <div class="plan-payment" data-field="pricing_section.plans.1.payment_methods"></div>
+                            <div class="plan-guarantees">
+                                <span data-field="pricing_section.plans.1.guarantees.0"></span>
+                                <span data-field="pricing_section.plans.1.guarantees.1"></span>
+                            </div>
                         </div>
 
-                        <!-- Basic (Recommended) -->
-                        <div class="plan-card plan-card-recommended">
-                            <div class="plan-recommended-badge" data-field="pricing_section.plans.2.recommended_label"></div>
+                        <!-- Platinum -->
+                        <div class="plan-card">
+                            <div class="plan-badge" data-field="pricing_section.plans.2.badge"></div>
                             <div class="plan-name" data-field="pricing_section.plans.2.name"></div>
-                            <div class="plan-price" data-field="pricing_section.plans.2.price_monthly"><span class="plan-price-period" data-field="pricing_section.plans.2.period"></span></div>
+                            <div class="plan-original-price" data-field="pricing_section.plans.2.original_price"></div>
+                            <div class="plan-price"><span data-field="pricing_section.plans.2.price_monthly"></span><span class="plan-price-period" data-field="pricing_section.plans.2.period"></span></div>
+                            <div class="plan-billing" data-field="pricing_section.plans.2.billing"></div>
+                            <div class="plan-credits">
+                                <span class="plan-credits-number" data-field="pricing_section.plans.2.credits"></span>
+                                <span class="plan-credits-label" data-field="pricing_section.plans.2.credits_label"></span>
+                            </div>
+                            <div class="plan-credits-equivalent" data-field="pricing_section.plans.2.credits_equivalent"></div>
                             <p class="plan-highlight" data-field="pricing_section.plans.2.highlight"></p>
                             <ul class="plan-features">
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.0"></span></li>
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.1"></span></li>
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.2"></span></li>
                                 <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.3"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.4"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.5"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.6"></span></li>
                             </ul>
-                            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary plan-cta" rel="nofollow sponsored" data-field="pricing_section.plans.2.cta"></a>
-                        </div>
-
-                        <!-- Premium -->
-                        <div class="plan-card">
-                            <div class="plan-name" data-field="pricing_section.plans.3.name"></div>
-                            <div class="plan-price" data-field="pricing_section.plans.3.price_monthly"><span class="plan-price-period" data-field="pricing_section.plans.3.period"></span></div>
-                            <p class="plan-highlight" data-field="pricing_section.plans.3.highlight"></p>
-                            <ul class="plan-features">
-                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.3.features.0"></span></li>
-                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.3.features.1"></span></li>
-                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.3.features.2"></span></li>
-                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.3.features.3"></span></li>
-                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.3.features.4"></span></li>
-                            </ul>
-                            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-secondary plan-cta" rel="nofollow sponsored" data-field="pricing_section.plans.3.cta"></a>
+                            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-secondary plan-cta" rel="nofollow sponsored" data-field="pricing_section.plans.2.cta"></a>
+                            <div class="plan-payment" data-field="pricing_section.plans.2.payment_methods"></div>
+                            <div class="plan-guarantees">
+                                <span data-field="pricing_section.plans.2.guarantees.0"></span>
+                                <span data-field="pricing_section.plans.2.guarantees.1"></span>
+                            </div>
                         </div>
                     </div>
 
