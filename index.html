@@ -1,1 +1,2341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <link rel="canonical" href="">
+    <title></title>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        :root {
+            --black: #0a0a0a;
+            --black-light: #111111;
+            --black-card: #161616;
+            --black-border: #1e1e1e;
+            --purple: #9b59ff;
+            --purple-dark: #7b3fe0;
+            --purple-light: #b47aff;
+            --purple-glow: rgba(155, 89, 255, 0.15);
+            --purple-glow-strong: rgba(155, 89, 255, 0.3);
+            --white: #f0f0f0;
+            --gray: #a0a0a0;
+            --gray-dark: #666666;
+            --green: #4ade80;
+            --red: #f87171;
+            --yellow: #fbbf24;
+            --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--black);
+            color: var(--white);
+            line-height: 1.7;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: var(--purple-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--purple);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-divider {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--purple-glow-strong), transparent);
+            margin: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--purple-glow);
+            color: var(--purple-light);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid rgba(155, 89, 255, 0.2);
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(155, 89, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(155, 89, 255, 0.5);
+            color: #fff;
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            background: transparent;
+            color: var(--purple-light);
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 2px solid var(--purple);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-secondary:hover {
+            background: var(--purple-glow);
+            color: var(--white);
+        }
+
+        .card {
+            background: var(--black-card);
+            border: 1px solid var(--black-border);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .section-subtitle {
+            color: var(--gray);
+            font-size: 1rem;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        /* ===== AGE BANNER ===== */
+        .age-banner {
+            background: linear-gradient(90deg, var(--purple-dark), var(--purple));
+            color: #fff;
+            text-align: center;
+            padding: 8px 16px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--black-border);
+            padding: 16px 0;
+        }
+
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--white);
+        }
+
+        .logo-highlight {
+            color: var(--purple);
+        }
+
+        .nav-desktop {
+            display: none;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-desktop a {
+            color: var(--gray);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-desktop a:hover {
+            color: var(--white);
+        }
+
+        .header-cta {
+            padding: 8px 20px;
+            font-size: 0.85rem;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 50% 30%, rgba(155, 89, 255, 0.08), transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-badge {
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-h1-highlight {
+            background: linear-gradient(135deg, var(--purple-light), var(--purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto 24px;
+            line-height: 1.6;
+        }
+
+        .hero-score {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--black-card);
+            border: 1px solid rgba(155, 89, 255, 0.3);
+            border-radius: 12px;
+            padding: 12px 24px;
+            margin-bottom: 28px;
+        }
+
+        .hero-score-number {
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: var(--purple-light);
+        }
+
+        .hero-score-details {
+            text-align: left;
+        }
+
+        .hero-score-max {
+            font-size: 0.8rem;
+            color: var(--gray-dark);
+        }
+
+        .hero-score-label {
+            font-size: 0.85rem;
+            color: var(--gray);
+            font-weight: 600;
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .hero-image {
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--black-border);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(155, 89, 255, 0.1);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* ===== TRUST SIGNALS ===== */
+        .trust-signals {
+            padding: 24px 0;
+            border-top: 1px solid var(--black-border);
+            border-bottom: 1px solid var(--black-border);
+            background: var(--black-light);
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            text-align: center;
+        }
+
+        .trust-item {
+            padding: 12px;
+        }
+
+        .trust-value {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--purple-light);
+        }
+
+        .trust-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-top: 4px;
+        }
+
+        /* ===== TOC ===== */
+        .toc {
+            padding: 40px 0;
+        }
+
+        .toc-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--purple-light);
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .toc-list li {
+            border-bottom: 1px solid var(--black-border);
+        }
+
+        .toc-list li:last-child {
+            border-bottom: none;
+        }
+
+        .toc-list a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            color: var(--gray);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+        }
+
+        .toc-list a:hover {
+            background: var(--purple-glow);
+            color: var(--white);
+        }
+
+        .toc-number {
+            color: var(--purple);
+            font-weight: 700;
+            font-size: 0.85rem;
+            min-width: 24px;
+        }
+
+        /* ===== QUICK SUMMARY ===== */
+        .quick-summary {
+            padding: 40px 0;
+        }
+
+        .summary-card {
+            background: var(--black-card);
+            border: 1px solid rgba(155, 89, 255, 0.3);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(155, 89, 255, 0.08);
+        }
+
+        .summary-header {
+            background: linear-gradient(135deg, rgba(155, 89, 255, 0.15), rgba(155, 89, 255, 0.05));
+            padding: 24px;
+            border-bottom: 1px solid rgba(155, 89, 255, 0.2);
+        }
+
+        .summary-header h2 {
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        .summary-intro {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-top: 8px;
+        }
+
+        .summary-body {
+            padding: 24px;
+        }
+
+        .summary-columns {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .pros-list, .cons-list {
+            list-style: none;
+        }
+
+        .pros-label, .cons-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .pros-label {
+            color: var(--green);
+        }
+
+        .cons-label {
+            color: var(--red);
+        }
+
+        .pros-list li, .cons-list li {
+            padding: 8px 0;
+            font-size: 0.9rem;
+            color: var(--gray);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.5;
+        }
+
+        .pro-icon, .con-icon {
+            flex-shrink: 0;
+            font-weight: 700;
+            margin-top: 1px;
+        }
+
+        .pro-icon {
+            color: var(--green);
+        }
+
+        .con-icon {
+            color: var(--red);
+        }
+
+        .summary-verdict {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--black-border);
+        }
+
+        .summary-verdict-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--purple-light);
+            margin-bottom: 8px;
+        }
+
+        .summary-verdict p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .summary-footer {
+            padding: 20px 24px;
+            border-top: 1px solid var(--black-border);
+            text-align: center;
+        }
+
+        /* ===== WHAT IS ===== */
+        .what-is-content p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+
+        .character-showcase {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        .character-card {
+            background: var(--black-card);
+            border: 1px solid var(--black-border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .character-img {
+            aspect-ratio: 1/1;
+            background: linear-gradient(135deg, #1a1a2e, #0f0f1a);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .character-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .character-img .character-type {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+
+        .character-info {
+            padding: 12px;
+        }
+
+        .character-name {
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .character-trait {
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+
+        .key-facts {
+            margin-top: 24px;
+        }
+
+        .key-facts-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--purple-light);
+            margin-bottom: 12px;
+        }
+
+        .key-facts-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .key-facts-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: var(--gray);
+            padding: 10px 14px;
+            background: var(--black-card);
+            border-radius: 8px;
+            border: 1px solid var(--black-border);
+        }
+
+        .fact-arrow {
+            color: var(--purple);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* ===== FEATURES ===== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: var(--black-card);
+            border: 1px solid var(--black-border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(155, 89, 255, 0.3);
+            box-shadow: 0 4px 20px rgba(155, 89, 255, 0.08);
+        }
+
+        .feature-card-image {
+            border-bottom: 1px solid var(--black-border);
+        }
+
+        .feature-card-body {
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+
+        .feature-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .feature-desc {
+            font-size: 0.9rem;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .feature-card-wide {
+            grid-column: 1 / -1;
+        }
+
+        /* Chat Mockup */
+        .chat-mockup {
+            background: var(--black-card);
+            overflow: hidden;
+        }
+
+        .chat-header-bar {
+            background: var(--black-light);
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--black-border);
+        }
+
+        .chat-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        .chat-name {
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .chat-status {
+            font-size: 0.7rem;
+            color: var(--green);
+        }
+
+        .chat-messages {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .chat-bubble {
+            max-width: 80%;
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .chat-bubble-ai {
+            background: rgba(155, 89, 255, 0.15);
+            color: var(--white);
+            align-self: flex-start;
+            border-bottom-left-radius: 4px;
+        }
+
+        .chat-bubble-user {
+            background: var(--black-border);
+            color: var(--gray);
+            align-self: flex-end;
+            border-bottom-right-radius: 4px;
+        }
+
+        .chat-input-bar {
+            padding: 12px 16px;
+            border-top: 1px solid var(--black-border);
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .chat-input-fake {
+            flex: 1;
+            background: var(--black-light);
+            border: 1px solid var(--black-border);
+            border-radius: 20px;
+            padding: 8px 14px;
+            font-size: 0.8rem;
+            color: var(--gray-dark);
+        }
+
+        .chat-send-btn {
+            width: 32px;
+            height: 32px;
+            background: var(--purple);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0.8rem;
+        }
+
+        /* Style Comparison */
+        .style-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        .style-card {
+            overflow: hidden;
+        }
+
+        .style-card-img {
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, #1a1a2e, #0f0f1a);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .style-card-img-anime {
+            background: linear-gradient(135deg, #2a1a4e, #1a0a3e);
+        }
+
+        .style-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .style-card-label {
+            text-align: center;
+            padding: 8px;
+            background: var(--black-card);
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--gray);
+        }
+
+        /* Feature visual placeholder */
+        .feature-visual {
+            min-height: 180px;
+            background: linear-gradient(135deg, var(--black-card), #1a1a2e);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-visual-alt {
+            background: linear-gradient(135deg, #1a0a3e, #0a0a2e);
+        }
+
+        .feature-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 180px;
+        }
+
+        /* Memory Tags */
+        .memory-tags {
+            margin-top: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .memory-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid;
+        }
+
+        .tag-green {
+            background: rgba(74,222,128,0.1);
+            color: #4ade80;
+            border-color: rgba(74,222,128,0.2);
+        }
+
+        .tag-yellow {
+            background: rgba(251,191,36,0.1);
+            color: #fbbf24;
+            border-color: rgba(251,191,36,0.2);
+        }
+
+        .tag-purple {
+            background: rgba(155,89,255,0.1);
+            color: #b47aff;
+            border-color: rgba(155,89,255,0.2);
+        }
+
+        .tag-red {
+            background: rgba(248,113,113,0.1);
+            color: #f87171;
+            border-color: rgba(248,113,113,0.2);
+        }
+
+        .tag-blue {
+            background: rgba(96,165,250,0.1);
+            color: #60a5fa;
+            border-color: rgba(96,165,250,0.2);
+        }
+
+        /* Feed Preview */
+        .feed-preview {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px;
+            margin: 16px 0;
+        }
+
+        .feed-item {
+            aspect-ratio: 1/1;
+            border-radius: 8px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a2e, #0f0f1a);
+            border: 1px solid var(--black-border);
+        }
+
+        .feed-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Inline CTA */
+        .inline-cta {
+            text-align: center;
+            padding: 28px 20px;
+            background: var(--black-card);
+            border: 1px solid rgba(155, 89, 255, 0.2);
+            border-radius: 12px;
+            margin: 32px 0;
+        }
+
+        .inline-cta p {
+            font-size: 0.95rem;
+            color: var(--gray);
+            margin-bottom: 16px;
+        }
+
+        /* ===== HOW IT WORKS ===== */
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .step-card {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .step-desc {
+            font-size: 0.9rem;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .model-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0 0;
+        }
+
+        .model-card {
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--black-border);
+            position: relative;
+            aspect-ratio: 3/4;
+            background: linear-gradient(180deg, #1a1a2e, var(--black-card));
+        }
+
+        .model-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .model-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 6px 8px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            font-size: 0.7rem;
+            color: var(--gray);
+            text-align: center;
+        }
+
+        /* ===== PRICING ===== */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .plan-card {
+            background: var(--black-card);
+            border: 1px solid var(--black-border);
+            border-radius: 12px;
+            padding: 24px;
+            position: relative;
+        }
+
+        .plan-card-recommended {
+            border-color: var(--purple);
+            box-shadow: 0 0 30px rgba(155, 89, 255, 0.15);
+        }
+
+        .plan-recommended-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 16px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .plan-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .plan-price {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--purple-light);
+            margin-bottom: 4px;
+        }
+
+        .plan-price-period {
+            font-size: 0.85rem;
+            color: var(--gray-dark);
+            font-weight: 400;
+        }
+
+        .plan-highlight {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .plan-features li {
+            padding: 6px 0;
+            font-size: 0.85rem;
+            color: var(--gray);
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .plan-check {
+            color: var(--purple-light);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .plan-cta {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        .pricing-note {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: var(--gray-dark);
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .pricing-bottom-cta {
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        /* ===== PROS & CONS FULL ===== */
+        .proscons-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .proscons-column-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .proscons-title-green {
+            color: var(--green);
+        }
+
+        .proscons-title-red {
+            color: var(--red);
+        }
+
+        .proscons-item {
+            padding: 16px;
+            background: var(--black-card);
+            border: 1px solid var(--black-border);
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .proscons-item-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .proscons-item-title-green {
+            color: var(--green);
+        }
+
+        .proscons-item-title-red {
+            color: var(--red);
+        }
+
+        .proscons-item-detail {
+            font-size: 0.85rem;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        /* ===== COMPARISON TABLE ===== */
+        .comparison-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-top: 20px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            min-width: 700px;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        .comparison-table thead {
+            background: var(--black-card);
+        }
+
+        .comparison-table th {
+            padding: 12px 10px;
+            text-align: left;
+            font-weight: 700;
+            color: var(--gray);
+            border-bottom: 2px solid var(--purple-glow-strong);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .comparison-table td {
+            padding: 12px 10px;
+            border-bottom: 1px solid var(--black-border);
+            color: var(--gray);
+            vertical-align: top;
+        }
+
+        .comparison-row-highlight td {
+            background: rgba(155, 89, 255, 0.05);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .platform-name {
+            font-weight: 700;
+            color: var(--white);
+            white-space: nowrap;
+        }
+
+        .platform-name-highlight {
+            color: var(--purple-light);
+        }
+
+        .alternatives-conclusion {
+            margin-top: 24px;
+            font-size: 0.95rem;
+            color: var(--gray);
+            line-height: 1.7;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .faq-item {
+            background: var(--black-card);
+            border: 1px solid var(--black-border);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 18px 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--white);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .faq-q-icon {
+            background: var(--purple);
+            color: #fff;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .faq-answer {
+            padding: 0 20px 18px 54px;
+            font-size: 0.9rem;
+            color: var(--gray);
+            line-height: 1.7;
+        }
+
+        /* ===== VERDICT ===== */
+        .verdict-score-big {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .verdict-number {
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--purple-light), var(--purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .verdict-max {
+            font-size: 1.2rem;
+            color: var(--gray-dark);
+        }
+
+        .verdict-label {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-top: 4px;
+        }
+
+        .score-breakdown {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .score-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 12px 16px;
+            background: var(--black-card);
+            border-radius: 8px;
+            border: 1px solid var(--black-border);
+        }
+
+        .score-category {
+            font-size: 0.85rem;
+            font-weight: 600;
+            flex: 1;
+        }
+
+        .score-bar-wrapper {
+            flex: 1;
+            height: 6px;
+            background: var(--black-border);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .score-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--purple), var(--purple-light));
+            border-radius: 3px;
+        }
+
+        .score-value {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: var(--purple-light);
+            min-width: 50px;
+            text-align: right;
+        }
+
+        .score-note {
+            display: none;
+        }
+
+        .verdict-text {
+            margin-bottom: 32px;
+        }
+
+        .verdict-text p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .privacy-visual {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: var(--black-card);
+            border: 1px solid var(--black-border);
+            border-radius: 10px;
+            margin: 16px 0 32px;
+        }
+
+        .privacy-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .privacy-text {
+            font-size: 0.85rem;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        .privacy-text strong {
+            color: var(--white);
+        }
+
+        .verdict-final-cta {
+            text-align: center;
+            padding: 32px 24px;
+            background: linear-gradient(135deg, rgba(155, 89, 255, 0.1), rgba(155, 89, 255, 0.03));
+            border: 1px solid rgba(155, 89, 255, 0.3);
+            border-radius: 16px;
+        }
+
+        .verdict-final-cta .btn-primary {
+            font-size: 1.1rem;
+            padding: 16px 40px;
+        }
+
+        .verdict-subtext {
+            margin-top: 12px;
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--black-light);
+            border-top: 1px solid var(--black-border);
+            padding: 40px 0 24px;
+        }
+
+        .footer-disclaimer {
+            font-size: 0.8rem;
+            color: var(--gray-dark);
+            line-height: 1.6;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--black-border);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .footer-links a {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        .footer-related {
+            margin-bottom: 24px;
+        }
+
+        .footer-related-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--gray);
+            margin-bottom: 10px;
+        }
+
+        .footer-related-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .footer-related-links a {
+            font-size: 0.8rem;
+            color: var(--purple-light);
+            background: var(--black-card);
+            padding: 6px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--black-border);
+        }
+
+        .footer-copyright {
+            font-size: 0.75rem;
+            color: var(--gray-dark);
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--black-border);
+        }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar-sticky {
+            display: none;
+        }
+
+        .sidebar-card {
+            background: var(--black-card);
+            border: 1px solid var(--black-border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .sidebar-score {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .sidebar-score-number {
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: var(--purple-light);
+        }
+
+        .sidebar-score-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        .sidebar-price {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--black-border);
+        }
+
+        .sidebar-links {
+            list-style: none;
+            margin: 16px 0;
+        }
+
+        .sidebar-links li {
+            border-bottom: 1px solid var(--black-border);
+        }
+
+        .sidebar-links a {
+            display: block;
+            padding: 10px 0;
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .sidebar-links a:hover {
+            color: var(--purple-light);
+        }
+
+        .sidebar-cta {
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 0.9rem;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (min-width: 640px) {
+            .hero h1 {
+                font-size: 2.6rem;
+            }
+
+            .hero-ctas {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .trust-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .summary-columns {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .proscons-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .character-showcase {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .model-gallery {
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            .score-note {
+                display: block;
+                font-size: 0.75rem;
+                color: var(--gray-dark);
+                flex: 2;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .nav-desktop {
+                display: flex;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1100px;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .layout-with-sidebar {
+                display: grid;
+                grid-template-columns: 1fr 280px;
+                gap: 40px;
+                align-items: start;
+            }
+
+            .sidebar-sticky {
+                display: block;
+                position: sticky;
+                top: 90px;
+            }
+
+            .pricing-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .pricing-grid .plan-card {
+                padding: 20px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- AGE BANNER -->
+    <div class="age-banner" data-field="age_banner"></div>
+
+    <!-- HEADER -->
+    <header class="header" id="home">
+        <div class="container">
+            <a href="/" class="logo" data-field="header.logo_text"><span class="logo-highlight"></span></a>
+            <nav>
+                <ul class="nav-desktop">
+                    <li><a href="#home" data-field="header.nav_links.0.label"></a></li>
+                    <li><a href="#review" data-field="header.nav_links.1.label"></a></li>
+                    <li><a href="#features" data-field="header.nav_links.2.label"></a></li>
+                    <li><a href="#pricing" data-field="header.nav_links.3.label"></a></li>
+                    <li><a href="#faq" data-field="header.nav_links.4.label"></a></li>
+                    <li><a href="#blog" data-field="header.nav_links.5.label"></a></li>
+                </ul>
+            </nav>
+            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary header-cta" rel="nofollow sponsored" data-field="header.cta_button.text"></a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="review">
+        <div class="container">
+            <div class="hero-badge">
+                <span class="badge" data-field="hero.badge_updated"></span>
+            </div>
+            <h1 data-field="hero.h1"><span class="hero-h1-highlight"></span></h1>
+            <p class="hero-subtitle" data-field="hero.subtitle"></p>
+            <div class="hero-score">
+                <span class="hero-score-number" data-field="hero.badge.score"></span>
+                <div class="hero-score-details">
+                    <div class="hero-score-max" data-field="hero.badge.max_score_label"></div>
+                    <div class="hero-score-label" data-field="hero.badge.label"></div>
+                </div>
+            </div>
+            <div class="hero-ctas">
+                <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary" rel="nofollow sponsored" data-field="hero.cta_primary.text"></a>
+                <a href="#what-is" class="btn-secondary" data-field="hero.cta_secondary.text"></a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=900&h=500&fit=crop&crop=center" alt="" data-field-alt="hero.image_alt">
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST SIGNALS -->
+    <div class="trust-signals">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-value" data-field="trust_signals.average_rating"></div>
+                    <div class="trust-label" data-field="trust_signals.score_label"></div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-value" data-field="trust_signals.review_count_number"></div>
+                    <div class="trust-label" data-field="trust_signals.review_count"></div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-value" data-field="trust_signals.testing_duration"></div>
+                    <div class="trust-label" data-field="trust_signals.verified_label"></div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-value" data-field="trust_signals.year"></div>
+                    <div class="trust-label" data-field="trust_signals.freshness_label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <div class="container">
+        <div class="layout-with-sidebar">
+            <main>
+
+                <!-- TOC -->
+                <nav class="toc" aria-label="Table of contents">
+                    <div class="card">
+                        <div class="toc-title" data-field="table_of_contents.title"></div>
+                        <ol class="toc-list">
+                            <li><a href="#what-is"><span class="toc-number">01</span><span data-field="table_of_contents.items.0.label"></span></a></li>
+                            <li><a href="#features"><span class="toc-number">02</span><span data-field="table_of_contents.items.1.label"></span></a></li>
+                            <li><a href="#pricing"><span class="toc-number">03</span><span data-field="table_of_contents.items.2.label"></span></a></li>
+                            <li><a href="#pros-cons"><span class="toc-number">04</span><span data-field="table_of_contents.items.3.label"></span></a></li>
+                            <li><a href="#alternatives"><span class="toc-number">05</span><span data-field="table_of_contents.items.4.label"></span></a></li>
+                            <li><a href="#faq"><span class="toc-number">06</span><span data-field="table_of_contents.items.5.label"></span></a></li>
+                            <li><a href="#verdict"><span class="toc-number">07</span><span data-field="table_of_contents.items.6.label"></span></a></li>
+                        </ol>
+                    </div>
+                </nav>
+
+                <!-- QUICK SUMMARY -->
+                <section class="quick-summary">
+                    <div class="summary-card">
+                        <div class="summary-header">
+                            <h2 data-field="quick_summary.section_title"></h2>
+                            <p class="summary-intro" data-field="quick_summary.intro_sentence"></p>
+                        </div>
+                        <div class="summary-body">
+                            <div class="summary-columns">
+                                <div>
+                                    <div class="pros-label" data-field="quick_summary.pros_label"></div>
+                                    <ul class="pros-list">
+                                        <li><span class="pro-icon">✓</span><span data-field="quick_summary.pros.0"></span></li>
+                                        <li><span class="pro-icon">✓</span><span data-field="quick_summary.pros.1"></span></li>
+                                        <li><span class="pro-icon">✓</span><span data-field="quick_summary.pros.2"></span></li>
+                                        <li><span class="pro-icon">✓</span><span data-field="quick_summary.pros.3"></span></li>
+                                        <li><span class="pro-icon">✓</span><span data-field="quick_summary.pros.4"></span></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="cons-label" data-field="quick_summary.cons_label"></div>
+                                    <ul class="cons-list">
+                                        <li><span class="con-icon">✗</span><span data-field="quick_summary.cons.0"></span></li>
+                                        <li><span class="con-icon">✗</span><span data-field="quick_summary.cons.1"></span></li>
+                                        <li><span class="con-icon">✗</span><span data-field="quick_summary.cons.2"></span></li>
+                                        <li><span class="con-icon">✗</span><span data-field="quick_summary.cons.3"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="summary-verdict">
+                                <div class="summary-verdict-label" data-field="quick_summary.verdict_label"></div>
+                                <p data-field="quick_summary.verdict_for"></p>
+                            </div>
+                        </div>
+                        <div class="summary-footer">
+                            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary" rel="nofollow sponsored" data-field="quick_summary.cta.text"></a>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="section-divider">
+
+                <!-- WHAT IS -->
+                <section class="section" id="what-is">
+                    <h2 class="section-title" data-field="what_is_section.h2"></h2>
+                    <div class="what-is-content">
+                        <p data-field="what_is_section.paragraphs.0"></p>
+                        <p data-field="what_is_section.paragraphs.1"></p>
+
+                        <!-- Character Showcase -->
+                        <div class="character-showcase">
+                            <div class="character-card">
+                                <div class="character-img">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face" alt="">
+                                    <span class="badge character-type" data-field="characters.0.type"></span>
+                                </div>
+                                <div class="character-info">
+                                    <div class="character-name" data-field="characters.0.name"></div>
+                                    <div class="character-trait" data-field="characters.0.trait"></div>
+                                </div>
+                            </div>
+                            <div class="character-card">
+                                <div class="character-img">
+                                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=400&fit=crop&crop=face" alt="">
+                                    <span class="badge character-type" data-field="characters.1.type"></span>
+                                </div>
+                                <div class="character-info">
+                                    <div class="character-name" data-field="characters.1.name"></div>
+                                    <div class="character-trait" data-field="characters.1.trait"></div>
+                                </div>
+                            </div>
+                            <div class="character-card">
+                                <div class="character-img">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face" alt="">
+                                    <span class="badge character-type" data-field="characters.2.type"></span>
+                                </div>
+                                <div class="character-info">
+                                    <div class="character-name" data-field="characters.2.name"></div>
+                                    <div class="character-trait" data-field="characters.2.trait"></div>
+                                </div>
+                            </div>
+                            <div class="character-card">
+                                <div class="character-img">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="">
+                                    <span class="badge character-type" data-field="characters.3.type"></span>
+                                </div>
+                                <div class="character-info">
+                                    <div class="character-name" data-field="characters.3.name"></div>
+                                    <div class="character-trait" data-field="characters.3.trait"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p data-field="what_is_section.paragraphs.2"></p>
+                    </div>
+
+                    <div class="key-facts">
+                        <div class="key-facts-title" data-field="what_is_section.key_facts_title"></div>
+                        <ul class="key-facts-list">
+                            <li><span class="fact-arrow">→</span><span data-field="what_is_section.key_facts.0"></span></li>
+                            <li><span class="fact-arrow">→</span><span data-field="what_is_section.key_facts.1"></span></li>
+                            <li><span class="fact-arrow">→</span><span data-field="what_is_section.key_facts.2"></span></li>
+                            <li><span class="fact-arrow">→</span><span data-field="what_is_section.key_facts.3"></span></li>
+                            <li><span class="fact-arrow">→</span><span data-field="what_is_section.key_facts.4"></span></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <hr class="section-divider">
+
+                <!-- FEATURES -->
+                <section class="section" id="features">
+                    <h2 class="section-title" data-field="features_section.h2"></h2>
+                    <p class="section-subtitle" data-field="features_section.intro"></p>
+
+                    <div class="features-grid">
+
+                        <!-- Feature 1: Chat -->
+                        <div class="feature-card">
+                            <div class="feature-card-image">
+                                <div class="chat-mockup">
+                                    <div class="chat-header-bar">
+                                        <div class="chat-avatar">🌙</div>
+                                        <div>
+                                            <div class="chat-name" data-field="chat_mock.name"></div>
+                                            <div class="chat-status" data-field="chat_mock.status"></div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-messages">
+                                        <div class="chat-bubble chat-bubble-ai" data-field="chat_mock.msg1"></div>
+                                        <div class="chat-bubble chat-bubble-user" data-field="chat_mock.msg2"></div>
+                                        <div class="chat-bubble chat-bubble-ai" data-field="chat_mock.msg3"></div>
+                                    </div>
+                                    <div class="chat-input-bar">
+                                        <div class="chat-input-fake" data-field="chat_mock.placeholder"></div>
+                                        <div class="chat-send-btn">▶</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-card-body">
+                                <div class="feature-icon" data-field="features_section.features.0.icon_suggestion"></div>
+                                <h3 class="feature-name" data-field="features_section.features.0.name"></h3>
+                                <p class="feature-desc" data-field="features_section.features.0.description"></p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2: Images -->
+                        <div class="feature-card">
+                            <div class="feature-card-image">
+                                <div class="style-comparison">
+                                    <div class="style-card">
+                                        <div class="style-card-img">
+                                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop&crop=face" alt="">
+                                        </div>
+                                        <div class="style-card-label" data-field="style_labels.realistic"></div>
+                                    </div>
+                                    <div class="style-card">
+                                        <div class="style-card-img style-card-img-anime">
+                                            <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=400&h=500&fit=crop" alt="">
+                                        </div>
+                                        <div class="style-card-label" data-field="style_labels.anime"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-card-body">
+                                <div class="feature-icon" data-field="features_section.features.1.icon_suggestion"></div>
+                                <h3 class="feature-name" data-field="features_section.features.1.name"></h3>
+                                <p class="feature-desc" data-field="features_section.features.1.description"></p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 3: Video -->
+                        <div class="feature-card">
+                            <div class="feature-card-image">
+                                <div class="feature-visual">
+                                    <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&h=300&fit=crop" alt="">
+                                </div>
+                            </div>
+                            <div class="feature-card-body">
+                                <div class="feature-icon" data-field="features_section.features.2.icon_suggestion"></div>
+                                <h3 class="feature-name" data-field="features_section.features.2.name"></h3>
+                                <p class="feature-desc" data-field="features_section.features.2.description"></p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 4: Builder -->
+                        <div class="feature-card">
+                            <div class="feature-card-image">
+                                <div class="feature-visual feature-visual-alt">
+                                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=300&fit=crop" alt="">
+                                </div>
+                            </div>
+                            <div class="feature-card-body">
+                                <div class="feature-icon" data-field="features_section.features.3.icon_suggestion"></div>
+                                <h3 class="feature-name" data-field="features_section.features.3.name"></h3>
+                                <p class="feature-desc" data-field="features_section.features.3.description"></p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 5: Memory -->
+                        <div class="feature-card">
+                            <div class="feature-card-body">
+                                <div class="feature-icon" data-field="features_section.features.4.icon_suggestion"></div>
+                                <h3 class="feature-name" data-field="features_section.features.4.name"></h3>
+                                <p class="feature-desc" data-field="features_section.features.4.description"></p>
+                                <div class="memory-tags">
+                                    <span class="memory-tag tag-green" data-field="memory_tags.0"></span>
+                                    <span class="memory-tag tag-yellow" data-field="memory_tags.1"></span>
+                                    <span class="memory-tag tag-purple" data-field="memory_tags.2"></span>
+                                    <span class="memory-tag tag-red" data-field="memory_tags.3"></span>
+                                    <span class="memory-tag tag-blue" data-field="memory_tags.4"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feature 6: Styles -->
+                        <div class="feature-card">
+                            <div class="feature-card-body">
+                                <div class="feature-icon" data-field="features_section.features.5.icon_suggestion"></div>
+                                <h3 class="feature-name" data-field="features_section.features.5.name"></h3>
+                                <p class="feature-desc" data-field="features_section.features.5.description"></p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 7: Community Feed -->
+                        <div class="feature-card feature-card-wide">
+                            <div class="feature-card-body">
+                                <div class="feature-icon" data-field="features_section.features.6.icon_suggestion"></div>
+                                <h3 class="feature-name" data-field="features_section.features.6.name"></h3>
+                                <p class="feature-desc" data-field="features_section.features.6.description"></p>
+                                <div class="feed-preview">
+                                    <div class="feed-item"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=300&fit=crop&crop=face" alt=""></div>
+                                    <div class="feed-item"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=300&fit=crop&crop=face" alt=""></div>
+                                    <div class="feed-item"><img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&h=300&fit=crop&crop=face" alt=""></div>
+                                    <div class="feed-item"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=face" alt=""></div>
+                                    <div class="feed-item"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&h=300&fit=crop&crop=face" alt=""></div>
+                                    <div class="feed-item"><img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=300&h=300&fit=crop&crop=face" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- INLINE CTA -->
+                <div class="inline-cta">
+                    <p data-field="inline_cta.text"></p>
+                    <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary" rel="nofollow sponsored" data-field="inline_cta.button"></a>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- HOW IT WORKS -->
+                <section class="section" id="how-it-works">
+                    <h2 class="section-title" data-field="how_it_works.h2"></h2>
+                    <p class="section-subtitle" data-field="how_it_works.intro"></p>
+
+                    <div class="steps-container">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3 class="step-title" data-field="how_it_works.steps.0.title"></h3>
+                                <p class="step-desc" data-field="how_it_works.steps.0.description"></p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3 class="step-title" data-field="how_it_works.steps.1.title"></h3>
+                                <p class="step-desc" data-field="how_it_works.steps.1.description"></p>
+                                <div class="model-gallery">
+                                    <div class="model-card">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=260&fit=crop&crop=face" alt="">
+                                        <div class="model-label" data-field="models.0"></div>
+                                    </div>
+                                    <div class="model-card">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=260&fit=crop&crop=face" alt="">
+                                        <div class="model-label" data-field="models.1"></div>
+                                    </div>
+                                    <div class="model-card">
+                                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200&h=260&fit=crop&crop=face" alt="">
+                                        <div class="model-label" data-field="models.2"></div>
+                                    </div>
+                                    <div class="model-card">
+                                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=200&h=260&fit=crop&crop=face" alt="">
+                                        <div class="model-label" data-field="models.3"></div>
+                                    </div>
+                                    <div class="model-card">
+                                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&h=260&fit=crop&crop=face" alt="">
+                                        <div class="model-label" data-field="models.4"></div>
+                                    </div>
+                                    <div class="model-card">
+                                        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=200&h=260&fit=crop&crop=face" alt="">
+                                        <div class="model-label" data-field="models.5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3 class="step-title" data-field="how_it_works.steps.2.title"></h3>
+                                <p class="step-desc" data-field="how_it_works.steps.2.description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="section-divider">
+
+                <!-- PRICING -->
+                <section class="section" id="pricing">
+                    <h2 class="section-title" data-field="pricing_section.h2"></h2>
+                    <p class="section-subtitle" data-field="pricing_section.intro"></p>
+
+                    <div class="pricing-grid">
+                        <!-- Free -->
+                        <div class="plan-card">
+                            <div class="plan-name" data-field="pricing_section.plans.0.name"></div>
+                            <div class="plan-price" data-field="pricing_section.plans.0.price_monthly"><span class="plan-price-period" data-field="pricing_section.plans.0.period"></span></div>
+                            <p class="plan-highlight" data-field="pricing_section.plans.0.highlight"></p>
+                            <ul class="plan-features">
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.0"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.1"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.2"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.3"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.0.features.4"></span></li>
+                            </ul>
+                            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-secondary plan-cta" rel="nofollow sponsored" data-field="pricing_section.plans.0.cta"></a>
+                        </div>
+
+                        <!-- Light -->
+                        <div class="plan-card">
+                            <div class="plan-name" data-field="pricing_section.plans.1.name"></div>
+                            <div class="plan-price" data-field="pricing_section.plans.1.price_monthly"><span class="plan-price-period" data-field="pricing_section.plans.1.period"></span></div>
+                            <p class="plan-highlight" data-field="pricing_section.plans.1.highlight"></p>
+                            <ul class="plan-features">
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.0"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.1"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.2"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.3"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.1.features.4"></span></li>
+                            </ul>
+                            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-secondary plan-cta" rel="nofollow sponsored" data-field="pricing_section.plans.1.cta"></a>
+                        </div>
+
+                        <!-- Basic (Recommended) -->
+                        <div class="plan-card plan-card-recommended">
+                            <div class="plan-recommended-badge" data-field="pricing_section.plans.2.recommended_label"></div>
+                            <div class="plan-name" data-field="pricing_section.plans.2.name"></div>
+                            <div class="plan-price" data-field="pricing_section.plans.2.price_monthly"><span class="plan-price-period" data-field="pricing_section.plans.2.period"></span></div>
+                            <p class="plan-highlight" data-field="pricing_section.plans.2.highlight"></p>
+                            <ul class="plan-features">
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.0"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.1"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.2"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.2.features.3"></span></li>
+                            </ul>
+                            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary plan-cta" rel="nofollow sponsored" data-field="pricing_section.plans.2.cta"></a>
+                        </div>
+
+                        <!-- Premium -->
+                        <div class="plan-card">
+                            <div class="plan-name" data-field="pricing_section.plans.3.name"></div>
+                            <div class="plan-price" data-field="pricing_section.plans.3.price_monthly"><span class="plan-price-period" data-field="pricing_section.plans.3.period"></span></div>
+                            <p class="plan-highlight" data-field="pricing_section.plans.3.highlight"></p>
+                            <ul class="plan-features">
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.3.features.0"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.3.features.1"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.3.features.2"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.3.features.3"></span></li>
+                                <li><span class="plan-check">✓</span><span data-field="pricing_section.plans.3.features.4"></span></li>
+                            </ul>
+                            <a href="https://selira.ai/?ref=selira-ai-com" class="btn-secondary plan-cta" rel="nofollow sponsored" data-field="pricing_section.plans.3.cta"></a>
+                        </div>
+                    </div>
+
+                    <p class="pricing-note" data-field="pricing_section.pricing_note"></p>
+                    <div class="pricing-bottom-cta">
+                        <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary" rel="nofollow sponsored" data-field="pricing_section.affiliate_cta.text"></a>
+                    </div>
+                </section>
+
+                <hr class="section-divider">
+
+                <!-- PROS & CONS -->
+                <section class="section" id="pros-cons">
+                    <h2 class="section-title" data-field="pros_cons_section.h2"></h2>
+                    <p class="section-subtitle" data-field="pros_cons_section.intro"></p>
+
+                    <div class="proscons-grid">
+                        <div class="proscons-column">
+                            <h3 class="proscons-column-title proscons-title-green" data-field="proscons.good_title"></h3>
+                            <div class="proscons-item">
+                                <div class="proscons-item-title proscons-item-title-green" data-field="pros_cons_section.pros.0.title"></div>
+                                <p class="proscons-item-detail" data-field="pros_cons_section.pros.0.detail"></p>
+                            </div>
+                            <div class="proscons-item">
+                                <div class="proscons-item-title proscons-item-title-green" data-field="pros_cons_section.pros.1.title"></div>
+                                <p class="proscons-item-detail" data-field="pros_cons_section.pros.1.detail"></p>
+                            </div>
+                            <div class="proscons-item">
+                                <div class="proscons-item-title proscons-item-title-green" data-field="pros_cons_section.pros.2.title"></div>
+                                <p class="proscons-item-detail" data-field="pros_cons_section.pros.2.detail"></p>
+                            </div>
+                            <div class="proscons-item">
+                                <div class="proscons-item-title proscons-item-title-green" data-field="pros_cons_section.pros.3.title"></div>
+                                <p class="proscons-item-detail" data-field="pros_cons_section.pros.3.detail"></p>
+                            </div>
+                            <div class="proscons-item">
+                                <div class="proscons-item-title proscons-item-title-green" data-field="pros_cons_section.pros.4.title"></div>
+                                <p class="proscons-item-detail" data-field="pros_cons_section.pros.4.detail"></p>
+                            </div>
+                            <div class="proscons-item">
+                                <div class="proscons-item-title proscons-item-title-green" data-field="pros_cons_section.pros.5.title"></div>
+                                <p class="proscons-item-detail" data-field="pros_cons_section.pros.5.detail"></p>
+                            </div>
+                        </div>
+
+                        <div class="proscons-column">
+                            <h3 class="proscons-column-title proscons-title-red" data-field="proscons.bad_title"></h3>
+                            <div class="proscons-item">
+                                <div class="proscons-item-title proscons-item-title-red" data-field="pros_cons_section.cons.0.title"></div>
+                                <p class="proscons-item-detail" data-field="pros_cons_section.cons.0.detail"></p>
+                            </div>
+                            <div class="proscons-item">
+                                <div class="proscons-item-title proscons-item-title-red" data-field="pros_cons_section.cons.1.title"></div>
+                                <p class="proscons-item-detail" data-field="pros_cons_section.cons.1.detail"></p>
+                            </div>
+                            <div class="proscons-item">
+                                <div class="proscons-item-title proscons-item-title-red" data-field="pros_cons_section.cons.2.title"></div>
+                                <p class="proscons-item-detail" data-field="pros_cons_section.cons.2.detail"></p>
+                            </div>
+                            <div class="proscons-item">
+                                <div class="proscons-item-title proscons-item-title-red" data-field="pros_cons_section.cons.3.title"></div>
+                                <p class="proscons-item-detail" data-field="pros_cons_section.cons.3.detail"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="section-divider">
+
+                <!-- ALTERNATIVES -->
+                <section class="section" id="alternatives">
+                    <h2 class="section-title" data-field="alternatives_section.h2"></h2>
+                    <p class="section-subtitle" data-field="alternatives_section.intro"></p>
+
+                    <div class="comparison-wrapper">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th data-field="table_headers.platform"></th>
+                                    <th data-field="table_headers.free_chat"></th>
+                                    <th data-field="table_headers.images"></th>
+                                    <th data-field="table_headers.video"></th>
+                                    <th data-field="table_headers.memory"></th>
+                                    <th data-field="table_headers.anime"></th>
+                                    <th data-field="table_headers.from"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="comparison-row-highlight">
+                                    <td class="platform-name platform-name-highlight" data-field="alternatives_section.comparison_table.0.platform"></td>
+                                    <td data-field="alternatives_section.comparison_table.0.free_chat"></td>
+                                    <td data-field="alternatives_section.comparison_table.0.image_generation"></td>
+                                    <td data-field="alternatives_section.comparison_table.0.video_generation"></td>
+                                    <td data-field="alternatives_section.comparison_table.0.memory_system"></td>
+                                    <td data-field="alternatives_section.comparison_table.0.anime_style"></td>
+                                    <td data-field="alternatives_section.comparison_table.0.starting_price"></td>
+                                </tr>
+                                <tr>
+                                    <td class="platform-name" data-field="alternatives_section.comparison_table.1.platform"></td>
+                                    <td data-field="alternatives_section.comparison_table.1.free_chat"></td>
+                                    <td data-field="alternatives_section.comparison_table.1.image_generation"></td>
+                                    <td data-field="alternatives_section.comparison_table.1.video_generation"></td>
+                                    <td data-field="alternatives_section.comparison_table.1.memory_system"></td>
+                                    <td data-field="alternatives_section.comparison_table.1.anime_style"></td>
+                                    <td data-field="alternatives_section.comparison_table.1.starting_price"></td>
+                                </tr>
+                                <tr>
+                                    <td class="platform-name" data-field="alternatives_section.comparison_table.2.platform"></td>
+                                    <td data-field="alternatives_section.comparison_table.2.free_chat"></td>
+                                    <td data-field="alternatives_section.comparison_table.2.image_generation"></td>
+                                    <td data-field="alternatives_section.comparison_table.2.video_generation"></td>
+                                    <td data-field="alternatives_section.comparison_table.2.memory_system"></td>
+                                    <td data-field="alternatives_section.comparison_table.2.anime_style"></td>
+                                    <td data-field="alternatives_section.comparison_table.2.starting_price"></td>
+                                </tr>
+                                <tr>
+                                    <td class="platform-name" data-field="alternatives_section.comparison_table.3.platform"></td>
+                                    <td data-field="alternatives_section.comparison_table.3.free_chat"></td>
+                                    <td data-field="alternatives_section.comparison_table.3.image_generation"></td>
+                                    <td data-field="alternatives_section.comparison_table.3.video_generation"></td>
+                                    <td data-field="alternatives_section.comparison_table.3.memory_system"></td>
+                                    <td data-field="alternatives_section.comparison_table.3.anime_style"></td>
+                                    <td data-field="alternatives_section.comparison_table.3.starting_price"></td>
+                                </tr>
+                                <tr>
+                                    <td class="platform-name" data-field="alternatives_section.comparison_table.4.platform"></td>
+                                    <td data-field="alternatives_section.comparison_table.4.free_chat"></td>
+                                    <td data-field="alternatives_section.comparison_table.4.image_generation"></td>
+                                    <td data-field="alternatives_section.comparison_table.4.video_generation"></td>
+                                    <td data-field="alternatives_section.comparison_table.4.memory_system"></td>
+                                    <td data-field="alternatives_section.comparison_table.4.anime_style"></td>
+                                    <td data-field="alternatives_section.comparison_table.4.starting_price"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="alternatives-conclusion" data-field="alternatives_section.conclusion"></p>
+
+                    <div class="inline-cta">
+                        <p data-field="inline_cta2.text"></p>
+                        <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary" rel="nofollow sponsored" data-field="inline_cta2.button"></a>
+                    </div>
+                </section>
+
+                <hr class="section-divider">
+
+                <!-- FAQ -->
+                <section class="section" id="faq">
+                    <h2 class="section-title" data-field="faq_section.h2"></h2>
+
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question"><span class="faq-q-icon">Q</span><span data-field="faq_section.faqs.0.question"></span></div>
+                            <div class="faq-answer" data-field="faq_section.faqs.0.answer"></div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"><span class="faq-q-icon">Q</span><span data-field="faq_section.faqs.1.question"></span></div>
+                            <div class="faq-answer" data-field="faq_section.faqs.1.answer"></div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"><span class="faq-q-icon">Q</span><span data-field="faq_section.faqs.2.question"></span></div>
+                            <div class="faq-answer" data-field="faq_section.faqs.2.answer"></div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"><span class="faq-q-icon">Q</span><span data-field="faq_section.faqs.3.question"></span></div>
+                            <div class="faq-answer" data-field="faq_section.faqs.3.answer"></div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"><span class="faq-q-icon">Q</span><span data-field="faq_section.faqs.4.question"></span></div>
+                            <div class="faq-answer" data-field="faq_section.faqs.4.answer"></div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"><span class="faq-q-icon">Q</span><span data-field="faq_section.faqs.5.question"></span></div>
+                            <div class="faq-answer" data-field="faq_section.faqs.5.answer"></div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"><span class="faq-q-icon">Q</span><span data-field="faq_section.faqs.6.question"></span></div>
+                            <div class="faq-answer" data-field="faq_section.faqs.6.answer"></div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"><span class="faq-q-icon">Q</span><span data-field="faq_section.faqs.7.question"></span></div>
+                            <div class="faq-answer" data-field="faq_section.faqs.7.answer"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="section-divider">
+
+                <!-- VERDICT -->
+                <section class="section" id="verdict">
+                    <h2 class="section-title" data-field="verdict_section.h2"></h2>
+
+                    <div class="verdict-score-big">
+                        <div class="verdict-number" data-field="verdict_section.final_score"></div>
+                        <div class="verdict-max" data-field="verdict_section.max_label"></div>
+                        <div class="verdict-label" data-field="verdict_section.score_label"></div>
+                    </div>
+
+                    <div class="score-breakdown">
+                        <div class="score-row">
+                            <span class="score-category" data-field="verdict_section.score_breakdown.0.category"></span>
+                            <div class="score-bar-wrapper"><div class="score-bar" style="width:95%;"></div></div>
+                            <span class="score-value" data-field="verdict_section.score_breakdown.0.score"></span>
+                            <span class="score-note" data-field="verdict_section.score_breakdown.0.note"></span>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-category" data-field="verdict_section.score_breakdown.1.category"></span>
+                            <div class="score-bar-wrapper"><div class="score-bar" style="width:88%;"></div></div>
+                            <span class="score-value" data-field="verdict_section.score_breakdown.1.score"></span>
+                            <span class="score-note" data-field="verdict_section.score_breakdown.1.note"></span>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-category" data-field="verdict_section.score_breakdown.2.category"></span>
+                            <div class="score-bar-wrapper"><div class="score-bar" style="width:94%;"></div></div>
+                            <span class="score-value" data-field="verdict_section.score_breakdown.2.score"></span>
+                            <span class="score-note" data-field="verdict_section.score_breakdown.2.note"></span>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-category" data-field="verdict_section.score_breakdown.3.category"></span>
+                            <div class="score-bar-wrapper"><div class="score-bar" style="width:96%;"></div></div>
+                            <span class="score-value" data-field="verdict_section.score_breakdown.3.score"></span>
+                            <span class="score-note" data-field="verdict_section.score_breakdown.3.note"></span>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-category" data-field="verdict_section.score_breakdown.4.category"></span>
+                            <div class="score-bar-wrapper"><div class="score-bar" style="width:91%;"></div></div>
+                            <span class="score-value" data-field="verdict_section.score_breakdown.4.score"></span>
+                            <span class="score-note" data-field="verdict_section.score_breakdown.4.note"></span>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-category" data-field="verdict_section.score_breakdown.5.category"></span>
+                            <div class="score-bar-wrapper"><div class="score-bar" style="width:78%;"></div></div>
+                            <span class="score-value" data-field="verdict_section.score_breakdown.5.score"></span>
+                            <span class="score-note" data-field="verdict_section.score_breakdown.5.note"></span>
+                        </div>
+                    </div>
+
+                    <div class="verdict-text">
+                        <p data-field="verdict_section.summary_paragraphs.0"></p>
+                        <p data-field="verdict_section.summary_paragraphs.1"></p>
+                    </div>
+
+                    <div class="privacy-visual">
+                        <div class="privacy-icon">🔒</div>
+                        <div class="privacy-text">
+                            <strong data-field="privacy.title"></strong>
+                            <span data-field="privacy.detail"></span>
+                        </div>
+                    </div>
+
+                    <div class="verdict-final-cta">
+                        <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary" rel="nofollow sponsored" data-field="verdict_section.final_cta.text"></a>
+                        <p class="verdict-subtext" data-field="verdict_section.final_cta.subtext"></p>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar-sticky">
+                <div class="sidebar-card">
+                    <div class="sidebar-score">
+                        <div class="sidebar-score-number" data-field="sidebar.score"></div>
+                        <div class="sidebar-score-label" data-field="sidebar.score_label"></div>
+                    </div>
+                    <div class="sidebar-price" data-field="sidebar.price_summary"></div>
+                    <a href="https://selira.ai/?ref=selira-ai-com" class="btn-primary sidebar-cta" rel="nofollow sponsored" data-field="sidebar.cta.text"></a>
+                    <ul class="sidebar-links">
+                        <li><a href="#features" data-field="sidebar.quick_links.0.label"></a></li>
+                        <li><a href="#pricing" data-field="sidebar.quick_links.1.label"></a></li>
+                        <li><a href="#pros-cons" data-field="sidebar.quick_links.2.label"></a></li>
+                        <li><a href="#faq" data-field="sidebar.quick_links.3.label"></a></li>
+                        <li><a href="#verdict" data-field="sidebar.quick_links.4.label"></a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="blog">
+        <div class="container">
+            <p class="footer-disclaimer" data-field="footer.disclaimer"></p>
+            <div class="footer-links">
+                <a href="/privacy" data-field="footer.legal_links.0.label"></a>
+                <a href="/terms" data-field="footer.legal_links.1.label"></a>
+                <a href="/18-disclaimer" data-field="footer.legal_links.2.label"></a>
+                <a href="/affiliate" data-field="footer.legal_links.3.label"></a>
+            </div>
+            <div class="footer-related">
+                <div class="footer-related-title" data-field="footer.related_reviews_label"></div>
+                <div class="footer-related-links">
+                    <a href="/candy-ai-review" data-field="footer.related_reviews.0.label"></a>
+                    <a href="/dreamgf-ai-review" data-field="footer.related_reviews.1.label"></a>
+                    <a href="/kupid-ai-review" data-field="footer.related_reviews.2.label"></a>
+                    <a href="/best-ai-girlfriend-apps" data-field="footer.related_reviews.3.label"></a>
+                </div>
+            </div>
+            <p class="footer-copyright" data-field="footer.copyright"></p>
+        </div>
+    </footer>
+
+</body>
+</html>
