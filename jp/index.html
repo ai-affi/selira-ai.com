@@ -2515,7 +2515,7 @@
             <div class="footer-lang">
                 <div class="footer-lang-title">🌐 Language</div>
                 <div class="footer-lang-list">
-                    <a href="/" class="footer-lang-item" data-lang="jp">🇺🇸 English</a>
+                    <a href="/" class="footer-lang-item" data-lang="ja">🇺🇸 English</a>
                     <a href="/fr/" class="footer-lang-item" data-lang="fr">🇫🇷 Français</a>
                     <a href="/de/" class="footer-lang-item" data-lang="de">🇩🇪 Deutsch</a>
                     <a href="/es/" class="footer-lang-item" data-lang="es">🇪🇸 Español</a>
@@ -2537,22 +2537,6 @@
 </body>
 </html>
 
-    <script>
-        (function() {
-            var path = window.location.pathname;
-            var lang = "en";
-            var match = path.match(/^\/(fr|de|it|nl|es|pl|ru|tr|jp|ko|pt)\//);
-            if (match) lang = match[1] === "jp" ? "ja" : match[1];
-            var items = document.querySelectorAll(".footer-lang-item");
-            items.forEach(function(item) {
-                if (item.getAttribute("data-lang") === lang) {
-                    item.classList.add("active");
-                    item.textContent += " ✓";
-                }
-            });
-        })();
-    </script>
-</
     <script>
         (function() {
             var path = window.location.pathname;
