@@ -1049,6 +1049,103 @@
             text-align: center;
         }
 
+        /* ===== PRICING NEW ELEMENTS ===== */
+        .plan-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ec4899, #f472b6);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .plan-badge:empty {
+            display: none;
+        }
+
+        .plan-original-price {
+            font-size: 1rem;
+            color: var(--gray-dark);
+            text-decoration: line-through;
+            margin-bottom: 2px;
+        }
+
+        .plan-original-price:empty {
+            display: none;
+        }
+
+        .plan-billing {
+            font-size: 0.8rem;
+            color: var(--gray-dark);
+            margin-bottom: 12px;
+        }
+
+        .plan-billing:empty {
+            display: none;
+        }
+
+        .plan-credits {
+            background: var(--purple-glow);
+            border: 1px solid rgba(155, 89, 255, 0.2);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .plan-credits-number {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--purple-light);
+            margin-right: 4px;
+        }
+
+        .plan-credits-label {
+            font-size: 0.9rem;
+            color: var(--gray);
+            font-weight: 600;
+        }
+
+        .plan-credits-equivalent {
+            font-size: 0.8rem;
+            color: var(--gray-dark);
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .plan-credits-equivalent:empty {
+            display: none;
+        }
+
+        .plan-payment {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--black-border);
+        }
+
+        .plan-payment:empty {
+            display: none;
+        }
+
+        .plan-guarantees {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 0.75rem;
+            color: var(--gray-dark);
+        }
+
+        .plan-guarantees span:empty {
+            display: none;
+        }
+
         .pricing-note {
             margin-top: 20px;
             font-size: 0.85rem;
