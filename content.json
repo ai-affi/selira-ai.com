@@ -8,6 +8,8 @@
     "og_description": "Free NSFW AI chat that actually remembers you? I tested Selira AI for 3 weeks. Here's the unfiltered truth."
   },
 
+  "age_banner": "🔞 This site reviews adult (18+) AI platforms. By continuing, you confirm you are of legal age.",
+
   "header": {
     "logo_text": "selira-ai.com",
     "nav_links": [
@@ -29,9 +31,11 @@
     "h1": "Selira AI Review & Full Test [2026]",
     "subtitle": "Free uncensored chat, AI-generated images & video, and a memory that actually sticks.",
     "image_alt": "Selira AI platform interface screenshot showing AI companion chat and image generation",
+    "badge_updated": "Updated May 2026",
     "badge": {
       "score": "9.2",
       "max_score": "10",
+      "max_score_label": "/10",
       "label": "Tested & Scored by Us"
     },
     "cta_primary": {
@@ -46,8 +50,13 @@
 
   "trust_signals": {
     "average_rating": "9.2/10",
+    "score_label": "Average User Rating",
+    "review_count_number": "312",
     "review_count": "312 users tested and rated it this quarter",
+    "testing_duration": "3 weeks",
     "verified_label": "Hands-on tested for 3 weeks",
+    "year": "2026",
+    "freshness_label": "Fresh Review",
     "media_logos_note": "We don't fake press logos. Any publications shown here have independently covered Selira AI or the AI companion space."
   },
 
@@ -67,6 +76,9 @@
   "quick_summary": {
     "section_title": "The Short Version",
     "intro_sentence": "I used Selira AI every day for three weeks — different companions, free and paid tiers, realistic and anime. Here's the condensed takeaway before we get into the weeds.",
+    "pros_label": "What We Like",
+    "cons_label": "What Could Be Better",
+    "verdict_label": "Best For",
     "pros": [
       "Truly unlimited free NSFW chat — no message cap, no token meter ticking down while you type",
       "The memory system actually recalls your name, kinks, and an inside joke from nine days ago",
@@ -96,6 +108,7 @@
       "Beyond chat, there's a custom companion builder where you sculpt personality, appearance, backstory, and behavioral patterns from scratch. And when you want visuals, two distinct image pipelines — photorealistic with hires-fix sharpening and clean anime linework — generate images that stay consistent to your companion's face. It felt less like browsing a catalog and more like discovering someone."
     ],
     "interface_image_alt": "Selira AI companion selection screen with realistic and anime character filters",
+    "key_facts_title": "Key Facts at a Glance",
     "key_facts": [
       "1,000+ pre-built companions across realistic and anime styles — male and female",
       "Chat is genuinely free and uncensored with zero message cap",
@@ -104,6 +117,13 @@
       "No real name required — sign up with a pseudonym and delete your account anytime"
     ]
   },
+
+  "characters": [
+    { "type": "Realistic", "name": "Emma", "trait": "Playful & Flirty" },
+    { "type": "Anime", "name": "Sakura", "trait": "Tsundere Archetype" },
+    { "type": "Realistic", "name": "Ava", "trait": "Mysterious & Deep" },
+    { "type": "Anime", "name": "Luna", "trait": "Yandere Vibes" }
+  ],
 
   "features_section": {
     "section_id": "features",
@@ -155,6 +175,28 @@
     ]
   },
 
+  "chat_mock": {
+    "name": "Luna",
+    "status": "Online",
+    "msg1": "Hey there... I've been thinking about you all day 💋",
+    "msg2": "Tell me more about what you like",
+    "msg3": "Mmm, I love that. Let's explore it together...",
+    "placeholder": "Type your message..."
+  },
+
+  "style_labels": {
+    "realistic": "Realistic",
+    "anime": "Anime"
+  },
+
+  "memory_tags": [
+    "personal_info",
+    "relationship",
+    "goal",
+    "preference",
+    "emotional"
+  ],
+
   "how_it_works": {
     "section_id": "how-it-works",
     "h2": "How to Start Using Selira AI in Under 2 Minutes",
@@ -181,6 +223,25 @@
     ]
   },
 
+  "models": [
+    "Tsundere",
+    "Yandere",
+    "Kuudere",
+    "Dandere",
+    "Dominant",
+    "Submissive"
+  ],
+
+  "inline_cta": {
+    "text": "Ready to try it yourself?",
+    "button": "Start Free on Selira AI"
+  },
+
+  "inline_cta2": {
+    "text": "Still on the fence? The free tier costs nothing to try.",
+    "button": "Test Selira AI Free"
+  },
+
   "pricing_section": {
     "section_id": "pricing",
     "h2": "Selira AI Pricing: What's Free, What Costs Money, No Tricks",
@@ -190,6 +251,7 @@
         "name": "Free",
         "price_monthly": "$0",
         "price_annual": "$0",
+        "period": "/mo",
         "highlight": "Unlimited NSFW chat with zero message cap — images are limited but the conversation never stops",
         "features": [
           "Unlimited uncensored chat — no daily or monthly message cap",
@@ -205,6 +267,7 @@
         "name": "Light",
         "price_monthly": "$5.99",
         "price_annual": "$59.90/yr (est.)",
+        "period": "/mo",
         "highlight": "The entry point for anyone who wants NSFW images — not just chat",
         "features": [
           "Everything in the Free plan",
@@ -218,8 +281,9 @@
       },
       {
         "name": "Basic",
-        "price_monthly": "See Site for Latest",
-        "price_annual": "See Site for Latest",
+        "price_monthly": "See Site",
+        "price_annual": "See Site",
+        "period": "/mo",
         "highlight": "Images plus video generation — the sweet spot for most users",
         "features": [
           "Everything in the Light plan",
@@ -233,8 +297,9 @@
       },
       {
         "name": "Premium",
-        "price_monthly": "See Site for Latest",
-        "price_annual": "See Site for Latest",
+        "price_monthly": "See Site",
+        "price_annual": "See Site",
+        "period": "/mo",
         "highlight": "Maximum generation speed, deepest memory, everything uncapped",
         "features": [
           "Everything in the Basic plan",
@@ -252,6 +317,11 @@
       "text": "Start free, upgrade only if it clicks",
       "url": "https://selira.ai/?ref=selira-ai-com"
     }
+  },
+
+  "proscons": {
+    "good_title": "The Good",
+    "bad_title": "The Rough Edges"
   },
 
   "pros_cons_section": {
@@ -302,6 +372,16 @@
         "detail": "During extended conversations that jump between multiple topics, the personality engine occasionally loses the thread. A tsundere companion might suddenly turn agreeable for a few messages before snapping back. It's infrequent but noticeable."
       }
     ]
+  },
+
+  "table_headers": {
+    "platform": "Platform",
+    "free_chat": "Free Chat",
+    "images": "Images",
+    "video": "Video",
+    "memory": "Memory",
+    "anime": "Anime",
+    "from": "From"
   },
 
   "alternatives_section": {
@@ -360,7 +440,7 @@
         "our_pick_note": "Solid character variety and community but daily message cap and basic memory hold it back"
       }
     ],
-    "conclusion": "Choose Selira AI if your priority is free, unlimited NSFW chat with a memory system that actually retains context. It's the best zero-cost entry point in the category, period. If your absolute top priority is cinematic-quality video or maximum image resolution and you're willing to pay $13+/month for it, Candy AI is worth a look. For everyone else starting from scratch, Selira is the obvious first stop."
+    "conclusion": "Choose Selira AI if your priority is free, unlimited NSFW chat with a memory system that actually retains context. It's the best zero-cost entry point in the category, period. If your absolute top priority is cinema-grade video or maximum image resolution and you're willing to pay $13+/month for it, Candy AI is worth a look. For everyone else starting from scratch, Selira is the obvious first stop."
   },
 
   "faq_section": {
@@ -406,6 +486,8 @@
     "section_id": "verdict",
     "h2": "The Final Verdict on Selira AI in 2026",
     "final_score": "9.2",
+    "max_label": "/10",
+    "score_label": "Our Tested Score",
     "score_breakdown": [
       { "category": "Free Tier Quality", "score": "9.5/10", "note": "Unlimited uncensored chat at $0 is unmatched — the free tier alone outperforms most competitors' paid plans for pure conversation." },
       { "category": "Image Generation", "score": "8.8/10", "note": "Face-consistency and dual pipelines are excellent. Free credits are stingy, but quality per image is top-tier once you're on a paid plan." },
@@ -425,22 +507,9 @@
     }
   },
 
-  "footer": {
-    "disclaimer": "selira-ai.com is an independent review site. Some links on this page are affiliate links — if you sign up through them, we may earn a commission at no extra cost to you. This doesn't influence our ratings or opinions; we test every platform ourselves before recommending it. This site contains content related to adult (18+) AI platforms. By using this site, you confirm you are of legal age in your jurisdiction.",
-    "legal_links": [
-      { "label": "Privacy Policy", "url": "/privacy" },
-      { "label": "Terms of Use", "url": "/terms" },
-      { "label": "18+ Disclaimer", "url": "/18-disclaimer" },
-      { "label": "Affiliate Disclosure", "url": "/affiliate" }
-    ],
-    "related_reviews_label": "Other Reviews Worth Reading",
-    "related_reviews": [
-      { "label": "Candy AI Review 2026", "url": "/candy-ai-review" },
-      { "label": "DreamGF AI Review 2026", "url": "/dreamgf-ai-review" },
-      { "label": "Kupid AI Review 2026", "url": "/kupid-ai-review" },
-      { "label": "Best AI Girlfriend Apps 2026", "url": "/best-ai-girlfriend-apps" }
-    ],
-    "copyright": "© 2026 selira-ai.com — All rights reserved. This site is intended for adults aged 18 and over only."
+  "privacy": {
+    "title": "Privacy First",
+    "detail": "256-bit encryption. No real name required. Delete everything anytime."
   },
 
   "sidebar": {
@@ -459,5 +528,23 @@
       { "label": "FAQ", "anchor": "#faq" },
       { "label": "Final Verdict", "anchor": "#verdict" }
     ]
+  },
+
+  "footer": {
+    "disclaimer": "selira-ai.com is an independent review site. Some links on this page are affiliate links — if you sign up through them, we may earn a commission at no extra cost to you. This doesn't influence our ratings or opinions; we test every platform ourselves before recommending it. This site contains content related to adult (18+) AI platforms. By using this site, you confirm you are of legal age in your jurisdiction.",
+    "legal_links": [
+      { "label": "Privacy Policy", "url": "/privacy" },
+      { "label": "Terms of Use", "url": "/terms" },
+      { "label": "18+ Disclaimer", "url": "/18-disclaimer" },
+      { "label": "Affiliate Disclosure", "url": "/affiliate" }
+    ],
+    "related_reviews_label": "Other Reviews Worth Reading",
+    "related_reviews": [
+      { "label": "Candy AI Review 2026", "url": "/candy-ai-review" },
+      { "label": "DreamGF AI Review 2026", "url": "/dreamgf-ai-review" },
+      { "label": "Kupid AI Review 2026", "url": "/kupid-ai-review" },
+      { "label": "Best AI Girlfriend Apps 2026", "url": "/best-ai-girlfriend-apps" }
+    ],
+    "copyright": "© 2026 selira-ai.com — All rights reserved. This site is intended for adults aged 18 and over only."
   }
 }
